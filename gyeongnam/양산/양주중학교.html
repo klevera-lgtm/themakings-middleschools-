@@ -1,418 +1,603 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<title>양주중학교 근처 학원 리스트 | THE MAKINGS</title>
-<meta name="description" content="경상남도 양산 양주중학교 근처 중학교 내신 전문 학원 리스트. 총 41개 학원 정보.">
-<link rel="canonical" href="https://middle.themakings.co.kr/gyeongnam/%EC%96%91%EC%82%B0/%EC%96%91%EC%A3%BC%EC%A4%91%ED%95%99%EA%B5%90.html">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>양주중학교 근처 학원 추천 | 경상남도 양산 | THE MAKINGS</title>
+<meta name="description" content="양주중학교 학생들이 많이 다니는 학원 리스트. 41개 학원, 전문도 기반 정렬.">
+<link rel="canonical" href="https://middle.themakings.co.kr/gyeongnam/양산/양주중학교.html">
+<style>*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--accent:#2563eb;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
 body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 .site-header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100}
 .header-inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none}
+.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none;letter-spacing:-.5px}
 .header-nav a{font-size:14px;color:var(--text-sub);text-decoration:none;margin:0 10px;font-weight:500}
-.header-nav a:hover,.header-nav a.active{color:var(--pink)}
-.breadcrumb{max-width:960px;margin:16px auto 0;padding:0 20px;font-size:14px;color:var(--text-sub)}
-.breadcrumb a{color:var(--pink);text-decoration:none}
-.breadcrumb span{margin:0 6px}
-.hero{max-width:960px;margin:0 auto;padding:28px 20px 20px;text-align:center}
-.hero h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
-.hero-sub{font-size:14px;color:var(--text-sub);margin-bottom:16px}
-.hero-stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto;padding:0 20px 40px}
-.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s}
-.nav-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
-.nav-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--pink)}
-.nav-card p{font-size:13px;color:var(--text-sub)}
-.filter-bar{max-width:960px;margin:0 auto 16px;padding:0 20px;display:flex;gap:8px;flex-wrap:wrap}
-.filter-btn{border:1px solid var(--border);background:#fff;border-radius:100px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
-.filter-btn:hover,.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
-.section-block{max-width:960px;margin:0 auto 24px;padding:0 20px}
-.section-title{font-size:17px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--pink)}
-.academy-list{display:flex;flex-direction:column;gap:8px}
-.academy-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.score-badge{min-width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;flex-shrink:0}
-.score-badge.green{background:#22c55e}.score-badge.orange{background:#f97316}.score-badge.gray{background:#9ca3af}
-.academy-info{flex:1;min-width:0}
-.academy-name{font-weight:700;font-size:14px;margin-bottom:2px}
-.academy-meta{font-size:12px;color:var(--text-sub);display:flex;gap:8px;flex-wrap:wrap}
-.academy-links{display:flex;gap:6px;flex-shrink:0}
-.btn-link{font-size:11px;padding:4px 8px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text-sub)}
-.btn-link:hover{border-color:var(--pink);color:var(--pink)}
-.more-btn{display:block;width:100%;margin-top:8px;padding:8px;text-align:center;background:#f3f4f6;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text-sub)}
-.more-btn:hover{background:#e5e7eb}
-.hidden{display:none}
-.score-info-box{max-width:960px;margin:0 auto 16px;padding:0 20px}
-.score-info-inner{background:#fff7fb;border:1px solid #fce7f3;border-radius:10px;padding:14px 18px}
-.score-info-title{font-weight:700;font-size:14px;margin-bottom:6px}
-.score-info-desc{font-size:13px;color:var(--text-sub);margin-bottom:8px;line-height:1.6}
-.score-info-levels{display:flex;gap:12px;flex-wrap:wrap}
-.score-level{font-size:12px;font-weight:600;padding:3px 10px;border-radius:100px}
-.score-level.green{background:#dcfce7;color:#166534}
-.score-level.orange{background:#ffedd5;color:#9a3412}
-.score-level.gray{background:#f3f4f6;color:#6b7280}
-.site-footer{background:#fff;border-top:1px solid var(--border);padding:36px 20px;text-align:center;margin-top:20px}
-.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}
-.footer-cta a{color:var(--pink);text-decoration:none}
-.footer-copy{font-size:13px;color:var(--text-sub);margin-top:10px}
-.footer-copy a{color:var(--pink);text-decoration:none}
-@media(max-width:640px){.hero h1{font-size:20px}.header-nav{display:none}.card-grid{grid-template-columns:1fr 1fr}.academy-card{flex-wrap:wrap}}
-</style></head><body>
-<header class="site-header"><div class="header-inner">
-<a href="/themakings-middleschools-/" class="logo">THE MAKINGS</a>
-<nav class="header-nav"><a href="/themakings-middleschools-/seoul/" >서울</a><a href="/themakings-middleschools-/incheon/" >인천</a><a href="/themakings-middleschools-/gyeonggi/" >경기</a><a href="/themakings-middleschools-/busan/" >부산</a><a href="/themakings-middleschools-/daegu/" >대구</a><a href="/themakings-middleschools-/daejeon/" >대전</a><a href="/themakings-middleschools-/gwangju/" >광주</a><a href="/themakings-middleschools-/ulsan/" >울산</a><a href="/themakings-middleschools-/sejong/" >세종</a><a href="/themakings-middleschools-/gangwon/" >강원</a><a href="/themakings-middleschools-/gyeongnam/" class="active">경남</a><a href="/themakings-middleschools-/gyeongbuk/" >경북</a><a href="/themakings-middleschools-/chungnam/" >충남</a><a href="/themakings-middleschools-/chungbuk/" >충북</a><a href="/themakings-middleschools-/jeonnam/" >전남</a><a href="/themakings-middleschools-/jeonbuk/" >전북</a><a href="/themakings-middleschools-/jeju/" >제주</a></nav>
-</div></header>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/gyeongnam/">경상남도</a><span>›</span><a href="/gyeongnam/%EC%96%91%EC%82%B0/">양산</a><span>›</span>양주중학교</div>
+.header-nav a:hover{color:var(--pink)}
+.breadcrumb{max-width:960px;margin:0 auto;padding:16px 20px 0;font-size:16px;color:var(--pink);font-weight:600}
+.breadcrumb a{color:var(--pink);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb span{margin:0 6px}
+.hero{max-width:960px;margin:0 auto;padding:32px 20px 16px;text-align:center}
+.hero h1{font-size:28px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px;line-height:1.3}
+.hero-sub{font-size:15px;color:var(--text-sub);margin-bottom:20px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:600}
+.score-info-box{max-width:960px;margin:0 auto 8px;padding:0 20px}
+.score-info-inner{background:#fdf2f8;border:1px solid #f9a8d4;border-left:4px solid var(--pink);border-radius:var(--radius);padding:16px 20px}
+.score-info-title{font-size:14px;font-weight:700;color:#be185d;margin-bottom:6px}
+.score-info-desc{font-size:13px;color:#9d174d;line-height:1.6;margin-bottom:10px}
+.score-info-levels{display:flex;gap:16px;flex-wrap:wrap}
+.score-level{font-size:12px;font-weight:600;padding:4px 10px;border-radius:100px}
+.score-level.green{background:#f0fdf4;color:#15803d}
+.score-level.orange{background:#fff7ed;color:#c2410c}
+.score-level.gray{background:#f9fafb;color:#6b7280;border:1px solid #e5e7eb}
+.filter-bar{max-width:960px;margin:0 auto;padding:8px 20px 20px;display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;font-family:inherit;color:var(--text-sub);display:flex;align-items:center;gap:4px}
+.filter-btn:hover{border-color:var(--pink);color:var(--pink)}
+.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.filter-btn .count{font-size:11px;opacity:.7}
+.subject-section{max-width:960px;margin:0 auto;padding:0 20px}
+.section-header{display:flex;align-items:center;justify-content:space-between;padding:24px 0 8px;border-bottom:2px solid var(--text);margin-bottom:12px}
+.section-header h2{font-size:20px;font-weight:800}.section-count{font-size:13px;color:var(--text-sub);font-weight:500}
+.subject-section.hidden{display:none}
+.academy-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:box-shadow .2s,border-color .2s;margin-bottom:12px}
+.academy-card:hover{box-shadow:var(--shadow-lg);border-color:#d1d5db}
+.academy-card.hidden{display:none}
+.card-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.card-title-row h3{font-size:17px;font-weight:700;line-height:1.3}
+.score-badge{display:flex;flex-direction:column;align-items:center;padding:6px 14px;border-radius:10px;flex-shrink:0;min-width:72px}
+.score-label{font-size:10px;font-weight:600;opacity:.8}
+.score-number{font-size:22px;font-weight:800;line-height:1.1;letter-spacing:-1px}
+.card-meta{font-size:12px;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.conc-badge{font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px}
+.mention-text{font-size:12px;color:var(--text-sub)}
+.card-body{font-size:14px}.card-address{color:var(--text-sub);margin-bottom:4px}
+.card-phone{margin-bottom:4px}.card-phone a{color:var(--accent);text-decoration:none;font-weight:500}
+.card-links{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.link-btn{font-size:13px;padding:6px 12px;border-radius:8px;text-decoration:none;font-weight:500;transition:opacity .15s}
+.link-btn:hover{opacity:.8}.link-btn.kakao{background:#fee500;color:#3c1e1e}.link-btn.blog{background:#e8f5e9;color:#2e7d32}
+.more-btn-wrap{max-width:960px;margin:0 auto;padding:0 20px 16px}
+.more-btn{width:100%;padding:12px;background:var(--card-bg);border:1px dashed var(--border);border-radius:var(--radius);font-size:13px;color:var(--text-sub);cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s}
+.more-btn:hover{border-color:var(--pink);color:var(--pink)}
+.school-list{max-width:960px;margin:0 auto;padding:0 20px 40px}
+.school-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.school-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.school-card:hover{box-shadow:var(--shadow-lg)}.school-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.school-card p{font-size:13px;color:var(--text-sub)}
+.district-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.district-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.district-card:hover{box-shadow:var(--shadow-lg)}.district-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.district-card p{font-size:13px;color:var(--text-sub)}
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.city-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s;text-align:center}
+.city-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
+.city-card h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.city-card p{font-size:14px;color:var(--text-sub)}
+.site-footer{background:#fff;border-top:1px solid var(--border);padding:40px 20px;text-align:center}
+.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}.footer-cta a{color:var(--pink);text-decoration:none}
+.footer-copy{font-size:13px;color:var(--text-sub);margin-top:12px}.footer-copy a{color:var(--pink);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:22px}.header-nav a{margin:0 6px}.stat-chip{font-size:12px;padding:6px 12px}.filter-btn{padding:6px 10px;font-size:12px}.card-title-row{flex-direction:column;gap:8px}.score-badge{flex-direction:row;gap:8px;min-width:auto;padding:6px 12px}.score-info-levels{gap:8px}.section-header h2{font-size:17px}.city-grid{grid-template-columns:1fr}}</style></head><body>
+<header class="site-header"><div class="header-inner"><a href="https://themakings.co.kr/" class="logo">THE MAKINGS</a><nav class="header-nav" style="margin-left:0;"><a href="/themakings-middleschools-/seoul/">서울</a><a href="/themakings-middleschools-/incheon/">인천</a><a href="/themakings-middleschools-/gyeonggi/">경기</a><a href="/themakings-middleschools-/busan/">부산</a><a href="/themakings-middleschools-/daegu/">대구</a><a href="/themakings-middleschools-/daejeon/">대전</a><a href="/themakings-middleschools-/gwangju/">광주</a><a href="/themakings-middleschools-/ulsan/">울산</a><a href="/themakings-middleschools-/sejong/">세종</a><a href="/themakings-middleschools-/gangwon/">강원</a><a href="/themakings-middleschools-/gyeongnam/">경남</a><a href="/themakings-middleschools-/gyeongbuk/">경북</a><a href="/themakings-middleschools-/chungnam/">충남</a><a href="/themakings-middleschools-/chungbuk/">충북</a><a href="/themakings-middleschools-/jeonnam/">전남</a><a href="/themakings-middleschools-/jeonbuk/">전북</a><a href="/themakings-middleschools-/jeju/">제주</a></nav></div></header>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
+<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/gyeongnam/">경상남도</a><span>›</span><a href="/themakings-middleschools-/gyeongnam/%EC%96%91%EC%82%B0/">양산</a><span>›</span>양주중학교</div>
 <section class="hero">
-<h1>양주중학교<br><span style="font-size:18px;color:var(--text-sub)">근처 학원 리스트</span></h1>
+<h1>양주중학교<br><span style="font-size:20px;color:var(--text-sub)">근처 학원 리스트</span></h1>
 <p class="hero-sub">경상남도 양산 · 중학교</p>
 <div class="hero-stats"><div class="stat-chip">📚 41개 학원</div><div class="stat-chip">🏫 전문도 기반 정렬</div></div>
 </section>
 <div class="score-info-box"><div class="score-info-inner">
 <div class="score-info-title">📊 전문도란?</div>
 <div class="score-info-desc">이 학원이 블로그에서 우리 학교를 얼마나 집중적으로 언급했는지 보여주는 지표예요.<br>언급 횟수가 많고 집중도가 높을수록 우리 학교 학생들이 즐겨 찾는 학원일 가능성이 높습니다.</div>
-<div class="score-info-levels"><span class="score-level green">🟢 집중도 70%+ 전문</span><span class="score-level orange">🟠 40~69% 선호</span><span class="score-level gray">⚪ 40% 미만 지역</span></div>
-</div></div>
-<div class="filter-bar"><button class="filter-btn active" data-subj="전체">전체</button><button class="filter-btn" data-subj="영어">영어</button><button class="filter-btn" data-subj="수학">수학</button><button class="filter-btn" data-subj="국어">국어</button><button class="filter-btn" data-subj="종합/입시">종합/입시</button></div>
-<div class="section-block" data-subj="영어">
-<div class="section-title">영어 (6개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge gray">지역<br>3.2</div>
-<div class="academy-info">
-<div class="academy-name">YBM잉글루영어학원</div>
-<div class="academy-meta"><span>언급 4회/20회</span><span>20% (지역)</span></div>
+<div class="score-info-levels">
+<span class="score-level green">🟢 집중도 70%+ 전문</span>
+<span class="score-level orange">🟠 40~69% 선호</span>
+<span class="score-level gray">⚪ 40% 미만 지역</span>
+</div></div></div>
+<div class="filter-bar"><button class="filter-btn active" onclick="filterSubject('all',this)">전체 <span class="count">41</span></button><button class="filter-btn" onclick="filterSubject('국어',this)">국어 <span class="count">2</span></button><button class="filter-btn" onclick="filterSubject('영어',this)">영어 <span class="count">6</span></button><button class="filter-btn" onclick="filterSubject('수학',this)">수학 <span class="count">17</span></button><button class="filter-btn" onclick="filterSubject('종합/입시',this)">종합/입시 <span class="count">16</span></button></div>
+<div class="subject-section" data-subject="국어"><div class="section-header"><h2>국어</h2><span class="section-count">2개 학원</span></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>빛글국어논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1099868870" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/pnscengloo/224322924441" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.1</div>
-<div class="academy-info">
-<div class="academy-name">잉글리시아이가촌점영어교습소</div>
-<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 야리1길 22 , 502호 (물금읍, 미래타워)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/700515099" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/readinjnsk/224323633046" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>정진국어논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/annemie_english/224323263112" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">펀(FUN)수학펀영어학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-366-6844</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 백호로 92 204호</p>
+  <p class="card-phone">📞 <a href="tel:055-372-2714">055-372-2714</a></p><div class="card-links"><a href="http://place.map.kakao.com/795052871" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/epmmin/224323392166" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div class="subject-section" data-subject="영어"><div class="section-header"><h2>영어</h2><span class="section-count">6개 학원</span></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>YBM잉글루영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">25</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/876284511" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/sejongxi/224323659415" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">리드영어학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">20% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 대운로 161 , 2층 (명동)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1099868870" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/pnscengloo/224322924441" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>잉글리시아이가촌점영어교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/939386664" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/sorimom777/224323773478" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">단디영어어학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">10% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 물금로 134 상가동 103호(양산물금사랑으로부영1단지)</p>
+  <div class="card-links"><a href="https://blog.naver.com/annemie_english/224323263112" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>펀(FUN)수학펀영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/724569023" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/yourtom644/224314968056" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">비상잉글리시아이대운점영어교습소</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 양주로 156 , 대동황토방아파트123동(상가동) 202,203,204호 (중부동)</p>
+  <p class="card-phone">📞 <a href="tel:055-366-6844">055-366-6844</a></p><div class="card-links"><a href="http://place.map.kakao.com/876284511" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/sejongxi/224323659415" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>리드영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/visange/224316842663" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div><div class="section-block" data-subj="수학">
-<div class="section-title">수학 (17개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>20.8</div>
-<div class="academy-info">
-<div class="academy-name">힐탑영수학원</div>
-<div class="academy-meta"><span>언급 15회/20회</span><span>75% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 백호로 96 , 미소프라자 204호 일부 (물금읍, 미소프라자)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/939386664" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/sorimom777/224323773478" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>단디영어어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1129365574" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/choisacademy/224293287689" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>4.5</div>
-<div class="academy-info">
-<div class="academy-name">딥매쓰일타수학교습소</div>
-<div class="academy-meta"><span>언급 5회/20회</span><span>25% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 새실로 159 나래메트로시티 B동 110호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/724569023" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/yourtom644/224314968056" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>비상잉글리시아이대운점영어교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/708725354" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ddongul100/224321692296" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">지앤비패럴랙스영수학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span><span>📞 055-365-0579</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 대운7길 23 , 1층 일부(우측) (삼호동, 영어교습소)</p>
+  <div class="card-links"><a href="https://blog.naver.com/visange/224316842663" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="수학"><div class="section-header"><h2>수학</h2><span class="section-count">17개 학원</span></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>힐탑영수학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">78</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/21222761" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/zoom0585/224317588139" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">패럴랙스영수학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">75% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 가촌서로 93 , 301동 201호, 202호, 203호 (물금읍, 양산 물금 동일스위트)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1129365574" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/choisacademy/224293287689" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>딥매쓰일타수학교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">29</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/21222761" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/zoom0585/224317588139" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.1</div>
-<div class="academy-info">
-<div class="academy-name">GH수학전문학원</div>
-<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">25% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 양주로 156 , 123동(상가동) 309,310,311호 일부 (중부동, 대동황토방아파트)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/708725354" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/ddongul100/224321692296" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>지앤비패럴랙스영수학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/gh_math/224313212740" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">창의융합수학논술학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-363-2779</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 덕계로 114 2층 전체(덕계동)</p>
+  <p class="card-phone">📞 <a href="tel:055-365-0579">055-365-0579</a></p><div class="card-links"><a href="http://place.map.kakao.com/21222761" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/zoom0585/224317588139" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>패럴랙스영수학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1988274345" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/thinkwhole/224323768899" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">4%의수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 범어로 62 , 치선타운 701호 (물금읍)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/21222761" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/zoom0585/224317588139" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>GH수학전문학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/chowallco1/224323656247" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">하이수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-383-3487</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">10% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 삽량로 193 비젼플라자 301호(중부동)</p>
+  <div class="card-links"><a href="https://blog.naver.com/gh_math/224313212740" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>창의융합수학논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/27528876" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">이경수학전문학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-384-5388</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 동면 금오16길 18 , 202호 (동면)</p>
+  <p class="card-phone">📞 <a href="tel:055-363-2779">055-363-2779</a></p><div class="card-links"><a href="http://place.map.kakao.com/1988274345" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/thinkwhole/224323768899" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>4%의수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1473311366" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/icarusnonsul/224302414039" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">근수학논술학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-381-2406</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 청운로 188 , 202호 (물금읍, 나래시티)</p>
+  <div class="card-links"><a href="https://blog.naver.com/chowallco1/224323656247" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>하이수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1054292475" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/davinci2026/224321207635" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">널위한수학전문학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 삽량로 193 , 302호 (중부동, 비젼플라자)</p>
+  <p class="card-phone">📞 <a href="tel:055-383-3487">055-383-3487</a></p><div class="card-links"><a href="http://place.map.kakao.com/27528876" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>이경수학전문학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1874376240" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mmmath01/224323772220" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">수학하다수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 야리로 31 , 경남프라자 509호 (물금읍)</p>
+  <p class="card-phone">📞 <a href="tel:055-384-5388">055-384-5388</a></p><div class="card-links"><a href="http://place.map.kakao.com/1473311366" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/icarusnonsul/224302414039" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>근수학논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1074493470" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mostly3ux/224323774578" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">채움차수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 물금로 96-17 , 에코타워 303호 (물금읍)</p>
+  <p class="card-phone">📞 <a href="tel:055-381-2406">055-381-2406</a></p><div class="card-links"><a href="http://place.map.kakao.com/1054292475" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/davinci2026/224321207635" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>널위한수학전문학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/math718/224321413839" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">스카이프리미엄수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 서들로 138 , 403호 (물금읍, 나래스타)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1874376240" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mmmath01/224323772220" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>수학하다수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/bwiwd/224321925450" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">하이탑수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 대운7길 23-1 1층 전체(삼호동)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1074493470" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mostly3ux/224323774578" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>채움차수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1853790242" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">순수학교습소</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 서들로 148 604호</p>
+  <div class="card-links"><a href="https://blog.naver.com/math718/224321413839" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>스카이프리미엄수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1663408228" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jiiiihh_yeon/224323723336" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-<div class="academy-list"><div class="academy-card hidden">
-<div class="score-badge gray" style="font-size:11px">지역</div>
-<div class="academy-info">
-<div class="academy-name">덕계페르마수학학원</div>
-<div class="academy-meta"><span>언급 1회</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 신덕계2길 15 상가동 202호(덕계동,트리마제 양산1단지)</p>
+  <div class="card-links"><a href="https://blog.naver.com/bwiwd/224321925450" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>하이탑수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"></div>
-</div></div><button class="more-btn">+ 1개 더 보기</button>
-</div><div class="section-block" data-subj="국어">
-<div class="section-title">국어 (2개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">빛글국어논술학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 서들로 148 , 402호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1853790242" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>순수학교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/700515099" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/readinjnsk/224323633046" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">정진국어논술학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-372-2714</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 화합길 35 , 1층 일부 (101호) (물금읍, 스파앤사우나헬스)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1663408228" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/jiiiihh_yeon/224323723336" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="more-btn-wrap"><button class="more-btn" onclick="toggleMore(this,'수학')">▼ 1회 언급 학원 1개 더 보기</button></div><div class="academy-card hidden data-subject="수학" data-once="1">
+<div class="card-title-row">
+  <h3>덕계페르마수학학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">24</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/795052871" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/epmmin/224323392166" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="종합/입시">
-<div class="section-title">종합/입시 (16개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge orange">선호<br>10.4</div>
-<div class="academy-info">
-<div class="academy-name">하이탑학원</div>
-<div class="academy-meta"><span>언급 9회/20회</span><span>45% (선호)</span><span>📞 055-363-8860</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 1회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 평산로 33 , 501호 (평산동, 유토피아빌딩)</p>
+  <div class="card-links"><a href="https://blog.naver.com/neua121/221500314228" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="종합/입시"><div class="section-header"><h2>종합/입시</h2><span class="section-count">16개 학원</span></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>하이탑학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">46</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/927966029" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">다빈치에듀학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span><span>📞 055-374-0150</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">45% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 대운로 352 상가동 301호 일부(삼호동)</p>
+  <p class="card-phone">📞 <a href="tel:055-363-8860">055-363-8860</a></p><div class="card-links"><a href="http://place.map.kakao.com/927966029" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>다빈치에듀학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/13147262" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/askeyedu/224323614150" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.1</div>
-<div class="academy-info">
-<div class="academy-name">엠베스트SE과외학원</div>
-<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 상북면 반회서7길 13 , 2층 (상북면, 양주영재학원)</p>
+  <p class="card-phone">📞 <a href="tel:055-374-0150">055-374-0150</a></p><div class="card-links"><a href="http://place.map.kakao.com/13147262" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/askeyedu/224323614150" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>엠베스트SE과외학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/growingtree207/224321715689" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.1</div>
-<div class="academy-info">
-<div class="academy-name">미래학원</div>
-<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span><span>📞 055-363-8505</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">10% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 야리로 17 202호</p>
+  <div class="card-links"><a href="https://blog.naver.com/growingtree207/224321715689" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>미래학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/2085137485" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/sema21/224323169988" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.8</div>
-<div class="academy-info">
-<div class="academy-name">종로엠스쿨석산학원</div>
-<div class="academy-meta"><span>언급 1회/9회</span><span>11% (지역)</span><span>📞 055-912-0979</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">10% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 양산역1길 18 , 701호 일부 (중부동, 나래프라자)</p>
+  <p class="card-phone">📞 <a href="tel:055-363-8505">055-363-8505</a></p><div class="card-links"><a href="http://place.map.kakao.com/2085137485" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/sema21/224323169988" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>웅진씽크빅학습센터중부학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/24265530" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jongromm/224316560405" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">웅진씽크빅학습센터중부학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-384-6088</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 양주로 129 , 401호 일부(401-1호) (중부동, 리얼프라자)</p>
+  <p class="card-phone">📞 <a href="tel:055-384-6088">055-384-6088</a></p><div class="card-links"><a href="https://blog.naver.com/hanamsmartall/224323707296" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>웅진씽크빅학습센터평산학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/hanamsmartall/224323707296" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">웅진씽크빅학습센터평산학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 평산중앙로 87 , 양산삼성명가타운 상가2동 201호 (평산동)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1990862478" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hanamsmartall/224323707296" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>한양영수과외학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1990862478" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hanamsmartall/224323707296" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">한양영수과외학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 범어로 60 , 601호 (물금읍)</p>
+  <div class="card-links"><a href="https://blog.naver.com/qmailukvj/224299297495" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>큐브통합학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/qmailukvj/224299297495" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">큐브통합학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 백호로 96 , 301호 (물금읍, 미소프라자)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1607296829" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/bwiwd/224321925450" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>모브학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1607296829" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/bwiwd/224321925450" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">모브학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-388-4180</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 웅상대로 1045 , 2층 (주진동)</p>
+  <p class="card-phone">📞 <a href="tel:055-388-4180">055-388-4180</a></p><div class="card-links"><a href="https://blog.naver.com/jgwkrrk/224323062359" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>웅진씽크빅스마트올클래스양주학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/jgwkrrk/224323062359" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">웅진씽크빅스마트올클래스양주학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 양주로 36 , 201호 (남부동)</p>
+  <div class="card-links"><a href="https://blog.naver.com/tptkddms9/224323748537" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>강의하는아이들학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/tptkddms9/224323748537" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">강의하는아이들학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 동면 금오13길 16 , 501호 (동면)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/13353230" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/tsdrive/224323768079" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>웅진프라임중부학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/13353230" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/tsdrive/224323768079" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">웅진프라임중부학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-384-6084</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 양주로 129 , 501호 (중부동, 리얼프라자)</p>
+  <p class="card-phone">📞 <a href="tel:055-384-6084">055-384-6084</a></p><div class="card-links"><a href="https://blog.naver.com/sybt3223/224275204115" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>로드십학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/sybt3223/224275204115" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">로드십학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 새실로 38 402호(애플타운)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/432234983" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/muyaho0622/224308940810" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>로이아트미술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/432234983" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/muyaho0622/224308940810" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">로이아트미술학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 동면 내송내안2길 25 승원프라자 제1동 301호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/930384926" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/lallaloi_sj/224315202933" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>양산제일학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/930384926" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/lallaloi_sj/224315202933" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">양산제일학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-386-8545</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 물금읍 목화로 87 , 1층 일부, 2층 일부 (물금읍, 양산제일학원)</p>
+  <p class="card-phone">📞 <a href="tel:055-386-8545">055-386-8545</a></p><div class="card-links"><a href="http://place.map.kakao.com/8422792" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/pinkmonamy/224320904534" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>종로엠스쿨석산학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">14</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/8422792" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/pinkmonamy/224320904534" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">11% (지역)</span><span class="mention-text">블로그 9회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경상남도 양산시 동면 금오13길 20 센텀빌딩 302호</p>
+  <p class="card-phone">📞 <a href="tel:055-912-0979">055-912-0979</a></p><div class="card-links"><a href="http://place.map.kakao.com/24265530" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/jongromm/224316560405" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
 <footer class="site-footer">
 <p class="footer-cta">학원 등록 및 광고 문의: <a href="mailto:themakings.official01@gmail.com">themakings.official01@gmail.com</a></p>
 <p class="footer-copy">© 2026 THE MAKINGS · <a href="https://themakings.co.kr">메인으로 돌아가기</a></p>
-</footer>
-<script>
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const subj=btn.dataset.subj;
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));
-    document.querySelectorAll('.section-block').forEach(sec=>{
-      sec.style.display=(subj==='전체'||sec.dataset.subj===subj)?'':'none';
+</footer><script>
+function filterSubject(subj, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.subject-section').forEach(sec => {
+        sec.classList.toggle('hidden', subj !== 'all' && sec.dataset.subject !== subj);
     });
-  });
-});
-document.querySelectorAll('.more-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    btn.previousElementSibling.querySelectorAll('.hidden').forEach(el=>el.classList.remove('hidden'));
-    btn.remove();
-  });
-});
+}
+function toggleMore(btn, subj) {
+    const cards = document.querySelectorAll(`.academy-card[data-subject="${subj}"][data-once="1"]`);
+    const isHidden = cards[0] && cards[0].classList.contains('hidden');
+    cards.forEach(c => c.classList.toggle('hidden', !isHidden));
+    btn.textContent = isHidden ? '▲ 1회 언급 학원 접기' : `▼ 1회 언급 학원 ${cards.length}개 더 보기`;
+}
 </script></body></html>

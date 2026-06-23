@@ -1,506 +1,747 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<title>오룡중학교 근처 학원 리스트 | THE MAKINGS</title>
-<meta name="description" content="전라남도 무안군 오룡중학교 근처 중학교 내신 전문 학원 리스트. 총 53개 학원 정보.">
-<link rel="canonical" href="https://middle.themakings.co.kr/jeonnam/%EB%AC%B4%EC%95%88%EA%B5%B0/%EC%98%A4%EB%A3%A1%EC%A4%91%ED%95%99%EA%B5%90.html">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>오룡중학교 근처 학원 추천 | 전라남도 무안군 | THE MAKINGS</title>
+<meta name="description" content="오룡중학교 학생들이 많이 다니는 학원 리스트. 53개 학원, 전문도 기반 정렬.">
+<link rel="canonical" href="https://middle.themakings.co.kr/jeonnam/무안군/오룡중학교.html">
+<style>*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--accent:#2563eb;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
 body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 .site-header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100}
 .header-inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none}
+.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none;letter-spacing:-.5px}
 .header-nav a{font-size:14px;color:var(--text-sub);text-decoration:none;margin:0 10px;font-weight:500}
-.header-nav a:hover,.header-nav a.active{color:var(--pink)}
-.breadcrumb{max-width:960px;margin:16px auto 0;padding:0 20px;font-size:14px;color:var(--text-sub)}
-.breadcrumb a{color:var(--pink);text-decoration:none}
-.breadcrumb span{margin:0 6px}
-.hero{max-width:960px;margin:0 auto;padding:28px 20px 20px;text-align:center}
-.hero h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
-.hero-sub{font-size:14px;color:var(--text-sub);margin-bottom:16px}
-.hero-stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto;padding:0 20px 40px}
-.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s}
-.nav-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
-.nav-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--pink)}
-.nav-card p{font-size:13px;color:var(--text-sub)}
-.filter-bar{max-width:960px;margin:0 auto 16px;padding:0 20px;display:flex;gap:8px;flex-wrap:wrap}
-.filter-btn{border:1px solid var(--border);background:#fff;border-radius:100px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
-.filter-btn:hover,.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
-.section-block{max-width:960px;margin:0 auto 24px;padding:0 20px}
-.section-title{font-size:17px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--pink)}
-.academy-list{display:flex;flex-direction:column;gap:8px}
-.academy-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.score-badge{min-width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;flex-shrink:0}
-.score-badge.green{background:#22c55e}.score-badge.orange{background:#f97316}.score-badge.gray{background:#9ca3af}
-.academy-info{flex:1;min-width:0}
-.academy-name{font-weight:700;font-size:14px;margin-bottom:2px}
-.academy-meta{font-size:12px;color:var(--text-sub);display:flex;gap:8px;flex-wrap:wrap}
-.academy-links{display:flex;gap:6px;flex-shrink:0}
-.btn-link{font-size:11px;padding:4px 8px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text-sub)}
-.btn-link:hover{border-color:var(--pink);color:var(--pink)}
-.more-btn{display:block;width:100%;margin-top:8px;padding:8px;text-align:center;background:#f3f4f6;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text-sub)}
-.more-btn:hover{background:#e5e7eb}
-.hidden{display:none}
-.score-info-box{max-width:960px;margin:0 auto 16px;padding:0 20px}
-.score-info-inner{background:#fff7fb;border:1px solid #fce7f3;border-radius:10px;padding:14px 18px}
-.score-info-title{font-weight:700;font-size:14px;margin-bottom:6px}
-.score-info-desc{font-size:13px;color:var(--text-sub);margin-bottom:8px;line-height:1.6}
-.score-info-levels{display:flex;gap:12px;flex-wrap:wrap}
-.score-level{font-size:12px;font-weight:600;padding:3px 10px;border-radius:100px}
-.score-level.green{background:#dcfce7;color:#166534}
-.score-level.orange{background:#ffedd5;color:#9a3412}
-.score-level.gray{background:#f3f4f6;color:#6b7280}
-.site-footer{background:#fff;border-top:1px solid var(--border);padding:36px 20px;text-align:center;margin-top:20px}
-.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}
-.footer-cta a{color:var(--pink);text-decoration:none}
-.footer-copy{font-size:13px;color:var(--text-sub);margin-top:10px}
-.footer-copy a{color:var(--pink);text-decoration:none}
-@media(max-width:640px){.hero h1{font-size:20px}.header-nav{display:none}.card-grid{grid-template-columns:1fr 1fr}.academy-card{flex-wrap:wrap}}
-</style></head><body>
-<header class="site-header"><div class="header-inner">
-<a href="/themakings-middleschools-/" class="logo">THE MAKINGS</a>
-<nav class="header-nav"><a href="/themakings-middleschools-/seoul/" >서울</a><a href="/themakings-middleschools-/incheon/" >인천</a><a href="/themakings-middleschools-/gyeonggi/" >경기</a><a href="/themakings-middleschools-/busan/" >부산</a><a href="/themakings-middleschools-/daegu/" >대구</a><a href="/themakings-middleschools-/daejeon/" >대전</a><a href="/themakings-middleschools-/gwangju/" >광주</a><a href="/themakings-middleschools-/ulsan/" >울산</a><a href="/themakings-middleschools-/sejong/" >세종</a><a href="/themakings-middleschools-/gangwon/" >강원</a><a href="/themakings-middleschools-/gyeongnam/" >경남</a><a href="/themakings-middleschools-/gyeongbuk/" >경북</a><a href="/themakings-middleschools-/chungnam/" >충남</a><a href="/themakings-middleschools-/chungbuk/" >충북</a><a href="/themakings-middleschools-/jeonnam/" class="active">전남</a><a href="/themakings-middleschools-/jeonbuk/" >전북</a><a href="/themakings-middleschools-/jeju/" >제주</a></nav>
-</div></header>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/jeonnam/">전라남도</a><span>›</span><a href="/jeonnam/%EB%AC%B4%EC%95%88%EA%B5%B0/">무안군</a><span>›</span>오룡중학교</div>
+.header-nav a:hover{color:var(--pink)}
+.breadcrumb{max-width:960px;margin:0 auto;padding:16px 20px 0;font-size:16px;color:var(--pink);font-weight:600}
+.breadcrumb a{color:var(--pink);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb span{margin:0 6px}
+.hero{max-width:960px;margin:0 auto;padding:32px 20px 16px;text-align:center}
+.hero h1{font-size:28px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px;line-height:1.3}
+.hero-sub{font-size:15px;color:var(--text-sub);margin-bottom:20px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:600}
+.score-info-box{max-width:960px;margin:0 auto 8px;padding:0 20px}
+.score-info-inner{background:#fdf2f8;border:1px solid #f9a8d4;border-left:4px solid var(--pink);border-radius:var(--radius);padding:16px 20px}
+.score-info-title{font-size:14px;font-weight:700;color:#be185d;margin-bottom:6px}
+.score-info-desc{font-size:13px;color:#9d174d;line-height:1.6;margin-bottom:10px}
+.score-info-levels{display:flex;gap:16px;flex-wrap:wrap}
+.score-level{font-size:12px;font-weight:600;padding:4px 10px;border-radius:100px}
+.score-level.green{background:#f0fdf4;color:#15803d}
+.score-level.orange{background:#fff7ed;color:#c2410c}
+.score-level.gray{background:#f9fafb;color:#6b7280;border:1px solid #e5e7eb}
+.filter-bar{max-width:960px;margin:0 auto;padding:8px 20px 20px;display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;font-family:inherit;color:var(--text-sub);display:flex;align-items:center;gap:4px}
+.filter-btn:hover{border-color:var(--pink);color:var(--pink)}
+.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.filter-btn .count{font-size:11px;opacity:.7}
+.subject-section{max-width:960px;margin:0 auto;padding:0 20px}
+.section-header{display:flex;align-items:center;justify-content:space-between;padding:24px 0 8px;border-bottom:2px solid var(--text);margin-bottom:12px}
+.section-header h2{font-size:20px;font-weight:800}.section-count{font-size:13px;color:var(--text-sub);font-weight:500}
+.subject-section.hidden{display:none}
+.academy-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:box-shadow .2s,border-color .2s;margin-bottom:12px}
+.academy-card:hover{box-shadow:var(--shadow-lg);border-color:#d1d5db}
+.academy-card.hidden{display:none}
+.card-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.card-title-row h3{font-size:17px;font-weight:700;line-height:1.3}
+.score-badge{display:flex;flex-direction:column;align-items:center;padding:6px 14px;border-radius:10px;flex-shrink:0;min-width:72px}
+.score-label{font-size:10px;font-weight:600;opacity:.8}
+.score-number{font-size:22px;font-weight:800;line-height:1.1;letter-spacing:-1px}
+.card-meta{font-size:12px;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.conc-badge{font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px}
+.mention-text{font-size:12px;color:var(--text-sub)}
+.card-body{font-size:14px}.card-address{color:var(--text-sub);margin-bottom:4px}
+.card-phone{margin-bottom:4px}.card-phone a{color:var(--accent);text-decoration:none;font-weight:500}
+.card-links{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.link-btn{font-size:13px;padding:6px 12px;border-radius:8px;text-decoration:none;font-weight:500;transition:opacity .15s}
+.link-btn:hover{opacity:.8}.link-btn.kakao{background:#fee500;color:#3c1e1e}.link-btn.blog{background:#e8f5e9;color:#2e7d32}
+.more-btn-wrap{max-width:960px;margin:0 auto;padding:0 20px 16px}
+.more-btn{width:100%;padding:12px;background:var(--card-bg);border:1px dashed var(--border);border-radius:var(--radius);font-size:13px;color:var(--text-sub);cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s}
+.more-btn:hover{border-color:var(--pink);color:var(--pink)}
+.school-list{max-width:960px;margin:0 auto;padding:0 20px 40px}
+.school-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.school-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.school-card:hover{box-shadow:var(--shadow-lg)}.school-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.school-card p{font-size:13px;color:var(--text-sub)}
+.district-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.district-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.district-card:hover{box-shadow:var(--shadow-lg)}.district-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.district-card p{font-size:13px;color:var(--text-sub)}
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.city-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s;text-align:center}
+.city-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
+.city-card h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.city-card p{font-size:14px;color:var(--text-sub)}
+.site-footer{background:#fff;border-top:1px solid var(--border);padding:40px 20px;text-align:center}
+.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}.footer-cta a{color:var(--pink);text-decoration:none}
+.footer-copy{font-size:13px;color:var(--text-sub);margin-top:12px}.footer-copy a{color:var(--pink);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:22px}.header-nav a{margin:0 6px}.stat-chip{font-size:12px;padding:6px 12px}.filter-btn{padding:6px 10px;font-size:12px}.card-title-row{flex-direction:column;gap:8px}.score-badge{flex-direction:row;gap:8px;min-width:auto;padding:6px 12px}.score-info-levels{gap:8px}.section-header h2{font-size:17px}.city-grid{grid-template-columns:1fr}}</style></head><body>
+<header class="site-header"><div class="header-inner"><a href="https://themakings.co.kr/" class="logo">THE MAKINGS</a><nav class="header-nav" style="margin-left:0;"><a href="/themakings-middleschools-/seoul/">서울</a><a href="/themakings-middleschools-/incheon/">인천</a><a href="/themakings-middleschools-/gyeonggi/">경기</a><a href="/themakings-middleschools-/busan/">부산</a><a href="/themakings-middleschools-/daegu/">대구</a><a href="/themakings-middleschools-/daejeon/">대전</a><a href="/themakings-middleschools-/gwangju/">광주</a><a href="/themakings-middleschools-/ulsan/">울산</a><a href="/themakings-middleschools-/sejong/">세종</a><a href="/themakings-middleschools-/gangwon/">강원</a><a href="/themakings-middleschools-/gyeongnam/">경남</a><a href="/themakings-middleschools-/gyeongbuk/">경북</a><a href="/themakings-middleschools-/chungnam/">충남</a><a href="/themakings-middleschools-/chungbuk/">충북</a><a href="/themakings-middleschools-/jeonnam/">전남</a><a href="/themakings-middleschools-/jeonbuk/">전북</a><a href="/themakings-middleschools-/jeju/">제주</a></nav></div></header>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
+<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/jeonnam/">전라남도</a><span>›</span><a href="/themakings-middleschools-/jeonnam/%EB%AC%B4%EC%95%88%EA%B5%B0/">무안군</a><span>›</span>오룡중학교</div>
 <section class="hero">
-<h1>오룡중학교<br><span style="font-size:18px;color:var(--text-sub)">근처 학원 리스트</span></h1>
+<h1>오룡중학교<br><span style="font-size:20px;color:var(--text-sub)">근처 학원 리스트</span></h1>
 <p class="hero-sub">전라남도 무안군 · 중학교</p>
 <div class="hero-stats"><div class="stat-chip">📚 53개 학원</div><div class="stat-chip">🏫 전문도 기반 정렬</div></div>
 </section>
 <div class="score-info-box"><div class="score-info-inner">
 <div class="score-info-title">📊 전문도란?</div>
 <div class="score-info-desc">이 학원이 블로그에서 우리 학교를 얼마나 집중적으로 언급했는지 보여주는 지표예요.<br>언급 횟수가 많고 집중도가 높을수록 우리 학교 학생들이 즐겨 찾는 학원일 가능성이 높습니다.</div>
-<div class="score-info-levels"><span class="score-level green">🟢 집중도 70%+ 전문</span><span class="score-level orange">🟠 40~69% 선호</span><span class="score-level gray">⚪ 40% 미만 지역</span></div>
-</div></div>
-<div class="filter-bar"><button class="filter-btn active" data-subj="전체">전체</button><button class="filter-btn" data-subj="영어">영어</button><button class="filter-btn" data-subj="수학">수학</button><button class="filter-btn" data-subj="국어">국어</button><button class="filter-btn" data-subj="과학">과학</button><button class="filter-btn" data-subj="종합/입시">종합/입시</button></div>
-<div class="section-block" data-subj="영어">
-<div class="section-title">영어 (26개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>30.4</div>
-<div class="academy-info">
-<div class="academy-name">오룡정의정어학원</div>
-<div class="academy-meta"><span>언급 20회/20회</span><span>100% (전문)</span></div>
+<div class="score-info-levels">
+<span class="score-level green">🟢 집중도 70%+ 전문</span>
+<span class="score-level orange">🟠 40~69% 선호</span>
+<span class="score-level gray">⚪ 40% 미만 지역</span>
+</div></div></div>
+<div class="filter-bar"><button class="filter-btn active" onclick="filterSubject('all',this)">전체 <span class="count">53</span></button><button class="filter-btn" onclick="filterSubject('국어',this)">국어 <span class="count">6</span></button><button class="filter-btn" onclick="filterSubject('영어',this)">영어 <span class="count">26</span></button><button class="filter-btn" onclick="filterSubject('수학',this)">수학 <span class="count">13</span></button><button class="filter-btn" onclick="filterSubject('과학',this)">과학 <span class="count">1</span></button><button class="filter-btn" onclick="filterSubject('종합/입시',this)">종합/입시 <span class="count">7</span></button></div>
+<div class="subject-section" data-subject="국어"><div class="section-header"><h2>국어</h2><span class="section-count">6개 학원</span></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>박세연국어오룡학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">99</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/2094770759" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/uichungchung/224099464260" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>30.4</div>
-<div class="academy-info">
-<div class="academy-name">오룡최상위영어학원</div>
-<div class="academy-meta"><span>언급 20회/20회</span><span>100% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 130 302호</p>
+  <p class="card-phone">📞 <a href="tel:061-282-9582">061-282-9582</a></p><div class="card-links"><a href="http://place.map.kakao.com/75333008" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/sally89122/223963821761" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>국정원국어오룡스키마학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">83</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1451683066" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/schema_heartrate/224289339815" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>26.5</div>
-<div class="academy-info">
-<div class="academy-name">이써밋영어학원</div>
-<div class="academy-meta"><span>언급 18회/20회</span><span>90% (전문)</span><span>📞 061-281-0501</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">80% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영3로 40 , 401호 (일로읍, 위드유타워)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1976901926" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/choiahnsuk/224297128482" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>남악한국학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">51</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/523811129" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/purpleaunt99/224268311856" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>24.6</div>
-<div class="academy-info">
-<div class="academy-name">제임스리딩오룡어학원</div>
-<div class="academy-meta"><span>언급 17회/20회</span><span>85% (전문)</span><span>📞 061-284-2955</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">50% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악2로74번길 35 , 3층 (삼향읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-285-7632">061-285-7632</a></p><div class="card-links"><a href="http://place.map.kakao.com/558992920" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/kong7632/224254409412" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>박홍선국어논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/474760959" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/gangmom_/223858681401" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>18.9</div>
-<div class="academy-info">
-<div class="academy-name">오룡브랜치1관 한상희어학원</div>
-<div class="academy-meta"><span>언급 9회/11회</span><span>82% (전문)</span><span>📞 061-281-0579</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악2로74번길 37 , 402호 (삼향읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-281-9060">061-281-9060</a></p><div class="card-links"><a href="http://place.map.kakao.com/785886122" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mongdang-/224320127146" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>물아혜서원학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/556201482" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hansenglishacademy/224284690853" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>18.9</div>
-<div class="academy-info">
-<div class="academy-name">오룡브랜치2관 한상희어학원</div>
-<div class="academy-meta"><span>언급 9회/11회</span><span>82% (전문)</span><span>📞 061-281-0579</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">10% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악5로46번길 7 , 4층 (삼향읍)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/337485430" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/mulahyi/224316317338" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>플라톤아카데미오룡독서논술교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1449675437" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hansenglishacademy/224284690853" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>17.2</div>
-<div class="academy-info">
-<div class="academy-name">정의정어학원</div>
-<div class="academy-meta"><span>언급 13회/20회</span><span>65% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 185 , 상가, 207호 (일로읍, 호반써밋APT)</p>
+  <div class="card-links"><a href="https://blog.naver.com/kmskhj1211/224315575718" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div class="subject-section" data-subject="영어"><div class="section-header"><h2>영어</h2><span class="section-count">26개 학원</span></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>오룡정의정어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">99</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/9381315" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/runway72/224244927400" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>15.4</div>
-<div class="academy-info">
-<div class="academy-name">오룡희망캠퍼스 미래엔영어수학학원</div>
-<div class="academy-meta"><span>언급 12회/20회</span><span>60% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 130 201호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/2094770759" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/uichungchung/224099464260" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>오룡최상위영어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">99</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/raonmath_namak/224290342063" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>15.4</div>
-<div class="academy-info">
-<div class="academy-name">하이퍼영어교습소</div>
-<div class="academy-meta"><span>언급 12회/20회</span><span>60% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오남로1길 28 301호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1451683066" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/schema_heartrate/224289339815" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>이써밋영어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">95</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1341119666" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hyperenglish/224306546735" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>14.7</div>
-<div class="academy-info">
-<div class="academy-name">남악브랜치 한상희어학원</div>
-<div class="academy-meta"><span>언급 8회/12회</span><span>67% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">90% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 153 , 상가 301~304호 (일로읍, 호반써밋 남악오룡 2차)</p>
+  <p class="card-phone">📞 <a href="tel:061-281-0501">061-281-0501</a></p><div class="card-links"><a href="http://place.map.kakao.com/523811129" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/purpleaunt99/224268311856" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>제임스리딩오룡어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">89</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/2079997023" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hansenglishacademy/224284690853" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>8.8</div>
-<div class="academy-info">
-<div class="academy-name">박세연국어학원</div>
-<div class="academy-meta"><span>언급 8회/20회</span><span>40% (선호)</span><span>📞 061-980-9582</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">85% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악5로34번길 14 , 1층 (삼향읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-284-2955">061-284-2955</a></p><div class="card-links"><a href="http://place.map.kakao.com/474760959" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/gangmom_/223858681401" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>오룡브랜치1관 한상희어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">69</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/510582922" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/lkwhyo/224305263306" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>6.0</div>
-<div class="academy-info">
-<div class="academy-name">퀘스트어학원 오룡분원</div>
-<div class="academy-meta"><span>언급 3회/7회</span><span>43% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">82% (전문)</span><span class="mention-text">블로그 11회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영3로 40 305/306호</p>
+  <p class="card-phone">📞 <a href="tel:061-281-0579">061-281-0579</a></p><div class="card-links"><a href="http://place.map.kakao.com/556201482" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hansenglishacademy/224284690853" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>오룡브랜치2관 한상희어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">69</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/yconfig/223166784401" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.8</div>
-<div class="academy-info">
-<div class="academy-name">앤더슨영어오룡캠퍼스학원</div>
-<div class="academy-meta"><span>언급 6회/20회</span><span>30% (지역)</span><span>📞 061-281-0582</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">82% (전문)</span><span class="mention-text">블로그 11회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 130 402호</p>
+  <p class="card-phone">📞 <a href="tel:061-281-0579">061-281-0579</a></p><div class="card-links"><a href="http://place.map.kakao.com/1449675437" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hansenglishacademy/224284690853" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>정의정어학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">67</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/64250479" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/parthenon4u/224316574558" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.6</div>
-<div class="academy-info">
-<div class="academy-name">앤박영어학원</div>
-<div class="academy-meta"><span>언급 5회/16회</span><span>31% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">65% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악3로 71 , 212호 213호 (삼향읍)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/9381315" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/runway72/224244927400" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>오룡희망캠퍼스 미래엔영어수학학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">61</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/anneparkeng/224200360984" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.3</div>
-<div class="academy-info">
-<div class="academy-name">위드비영어학원</div>
-<div class="academy-meta"><span>언급 3회/8회</span><span>38% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">60% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 132 웨스턴프라자 101동 301호</p>
+  <div class="card-links"><a href="https://blog.naver.com/raonmath_namak/224290342063" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>하이퍼영어교습소</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">61</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/242310803" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/kcyoosung/224159456425" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>3.2</div>
-<div class="academy-info">
-<div class="academy-name">스키마국어영어입시학원</div>
-<div class="academy-meta"><span>언급 4회/20회</span><span>20% (지역)</span><span>📞 061-282-9509</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">60% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 185 (호반써밋 남악오룡 3차)316동 107호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1341119666" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hyperenglish/224306546735" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>남악브랜치 한상희어학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">57</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/schema_heartrate/224303182657" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.7</div>
-<div class="academy-info">
-<div class="academy-name">샘밑국어학원</div>
-<div class="academy-meta"><span>언급 2회/8회</span><span>25% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">67% (선호)</span><span class="mention-text">블로그 12회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악5로34번길 11-9 1층</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/2079997023" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hansenglishacademy/224284690853" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>박세연국어학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">42</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1546886077" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/gangmom_/223858681401" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">정지혜영어학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">40% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악2로74번길 33 , 301호 (삼향읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-980-9582">061-980-9582</a></p><div class="card-links"><a href="http://place.map.kakao.com/510582922" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/lkwhyo/224305263306" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>앤더슨영어오룡캠퍼스학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">33</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/ilsam2/224232497307" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">윤선생영어숲남악오룡학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">30% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로5길 17 , 3층 (일로읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-281-0582">061-281-0582</a></p><div class="card-links"><a href="http://place.map.kakao.com/64250479" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/parthenon4u/224316574558" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>앤박영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">31</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1000396072" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/whwoska1206/224323138423" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">이아이이고려대어학원오룡캠퍼스학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">31% (지역)</span><span class="mention-text">블로그 16회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로5길 12 401호</p>
+  <div class="card-links"><a href="https://blog.naver.com/anneparkeng/224200360984" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>퀘스트어학원 오룡분원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">28</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/ddubbi-/224303192126" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.8</div>
-<div class="academy-info">
-<div class="academy-name">캐나다테솔남악어학원</div>
-<div class="academy-meta"><span>언급 1회/8회</span><span>12% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">43% (선호)</span><span class="mention-text">블로그 7회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영3로 30 , 202호 (일로읍)</p>
+  <div class="card-links"><a href="https://blog.naver.com/yconfig/223166784401" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>위드비영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">27</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/2099793407" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/yconfig/223166784401" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">한상희어학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 061-284-0727</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">38% (지역)</span><span class="mention-text">블로그 8회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로3길 3 201호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/242310803" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/kcyoosung/224159456425" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>스키마국어영어입시학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">25</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/25548487" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/j-jshinseong16/224292358802" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">앤더슨희망캠퍼스학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">20% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악3로 39 , 203호 (삼향읍, 남악 펠리시티 1차)</p>
+  <p class="card-phone">📞 <a href="tel:061-282-9509">061-282-9509</a></p><div class="card-links"><a href="https://blog.naver.com/schema_heartrate/224303182657" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>정지혜영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1779189339" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/parthenon4u/224316574558" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">이베스트영어학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로4길 18 401호</p>
+  <div class="card-links"><a href="https://blog.naver.com/ilsam2/224232497307" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>윤선생영어숲남악오룡학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/766304664" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ebestyoungtong/224323697444" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">하오중국어교습소</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영1로 96 상가동3동 107~108호(오룡 우미린 더 시그니처 2차)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1000396072" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/whwoska1206/224323138423" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>이아이이고려대어학원오룡캠퍼스학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/ckdlghd7202/224317518369" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">루시아영어교습소</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 126 5층</p>
+  <div class="card-links"><a href="https://blog.naver.com/ddubbi-/224303192126" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>샘밑국어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1897428507" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/reengkieng_dongtan/224268593359" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div><div class="section-block" data-subj="수학">
-<div class="section-title">수학 (13개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>30.4</div>
-<div class="academy-info">
-<div class="academy-name">티앤씨영수학원</div>
-<div class="academy-meta"><span>언급 20회/20회</span><span>100% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">25% (지역)</span><span class="mention-text">블로그 8회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 130 202호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1546886077" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/gangmom_/223858681401" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>한상희어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/tncenglishmath/223505737899" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>24.0</div>
-<div class="academy-info">
-<div class="academy-name">오룡하이엠수학학원</div>
-<div class="academy-meta"><span>언급 10회/10회</span><span>100% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악2로74번길 33 , 4층 (삼향읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-284-0727">061-284-0727</a></p><div class="card-links"><a href="http://place.map.kakao.com/25548487" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/j-jshinseong16/224292358802" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>앤더슨희망캠퍼스학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/highm_oryong/224312002142" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>22.7</div>
-<div class="academy-info">
-<div class="academy-name">이써밋수학학원</div>
-<div class="academy-meta"><span>언급 16회/20회</span><span>80% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로3길 3 502~503호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1779189339" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/parthenon4u/224316574558" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>이베스트영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/sunmi060513/224296840365" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>8.8</div>
-<div class="academy-info">
-<div class="academy-name">김샘수학오룡2관학원</div>
-<div class="academy-meta"><span>언급 8회/20회</span><span>40% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영3로 40 508호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/766304664" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/ebestyoungtong/224323697444" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>하오중국어교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/goodhousebansong/224312762624" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>7.3</div>
-<div class="academy-info">
-<div class="academy-name">에스케이수학오룡2관학원</div>
-<div class="academy-meta"><span>언급 7회/20회</span><span>35% (지역)</span><span>📞 061-281-2882</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 131 , 상가 214호 (일로읍, 호반써밋 남악오룡 1차)</p>
+  <div class="card-links"><a href="https://blog.naver.com/ckdlghd7202/224317518369" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>루시아영어교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1713690800" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/silxex2/224292408112" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.8</div>
-<div class="academy-info">
-<div class="academy-name">남악이해하는수학학원</div>
-<div class="academy-meta"><span>언급 6회/20회</span><span>30% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡중앙동로 37 제근생 2동 102호(오룡 에듀포레 푸르지오)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1897428507" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/reengkieng_dongtan/224268593359" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>캐나다테솔남악어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">13</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/176124864" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/insidez82/224323313773" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>3.5</div>
-<div class="academy-info">
-<div class="academy-name">박태백수학교습소</div>
-<div class="academy-meta"><span>언급 1회/2회</span><span>50% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">12% (지역)</span><span class="mention-text">블로그 8회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 대죽서로 17 , 602호 성현프라자 (삼향읍)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/2099793407" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/yconfig/223166784401" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="수학"><div class="section-header"><h2>수학</h2><span class="section-count">13개 학원</span></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>티앤씨영수학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">99</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/jhpp12/223267235308" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">지혜의샘수학학원 오룡캠퍼스</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영3로 30 , 302호 (일로읍)</p>
+  <div class="card-links"><a href="https://blog.naver.com/tncenglishmath/223505737899" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>오룡하이엠수학학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">84</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1875826003" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/yjsjhs/224300013764" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">이레수학학원오룡분원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 10회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로5길 17 203호</p>
+  <div class="card-links"><a href="https://blog.naver.com/highm_oryong/224312002142" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>이써밋수학학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">83</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/yjsjhs/224300013764" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">에이원수학오룡캠퍼스학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">80% (전문)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 153 , 상가동 313호 (일로읍, 호반써밋 남악오룡 2차)</p>
+  <div class="card-links"><a href="https://blog.naver.com/sunmi060513/224296840365" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>김샘수학오룡2관학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">42</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1611771900" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/helpkimyoung/224304212935" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">미래엔수학최강수학학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">40% (선호)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로3길 3 302호</p>
+  <div class="card-links"><a href="https://blog.naver.com/goodhousebansong/224312762624" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>에스케이수학오룡2관학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">37</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/keseller/224318838933" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">공감수학학원 오룡캠퍼스</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">35% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로3길 3 202호</p>
+  <p class="card-phone">📞 <a href="tel:061-281-2882">061-281-2882</a></p><div class="card-links"><a href="http://place.map.kakao.com/1713690800" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/silxex2/224292408112" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>남악이해하는수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">33</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/hy_stories/224323553364" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">메이저고등수학전문학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">30% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악5로60번길 33</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/176124864" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/insidez82/224323313773" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>지혜의샘수학학원 오룡캠퍼스</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1441903236" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/newfine_elemid/224319998843" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="국어">
-<div class="section-title">국어 (6개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>30.4</div>
-<div class="academy-info">
-<div class="academy-name">박세연국어오룡학원</div>
-<div class="academy-meta"><span>언급 20회/20회</span><span>100% (전문)</span><span>📞 061-282-9582</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로5길 17 , 401~402호 (일로읍)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1875826003" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/yjsjhs/224300013764" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>이레수학학원오룡분원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/75333008" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/sally89122/223963821761" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>22.7</div>
-<div class="academy-info">
-<div class="academy-name">국정원국어오룡스키마학원</div>
-<div class="academy-meta"><span>언급 16회/20회</span><span>80% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡중앙북로 65 301호</p>
+  <div class="card-links"><a href="https://blog.naver.com/yjsjhs/224300013764" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>에이원수학오룡캠퍼스학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1976901926" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/choiahnsuk/224297128482" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>12.0</div>
-<div class="academy-info">
-<div class="academy-name">남악한국학원</div>
-<div class="academy-meta"><span>언급 10회/20회</span><span>50% (선호)</span><span>📞 061-285-7632</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로 130 301호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1611771900" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/helpkimyoung/224304212935" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>미래엔수학최강수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/558992920" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/kong7632/224254409412" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">박홍선국어논술학원</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span><span>📞 061-281-9060</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악2로74번길 39 , 401호 (삼향읍, 광일프라자)</p>
+  <div class="card-links"><a href="https://blog.naver.com/keseller/224318838933" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>공감수학학원 오룡캠퍼스</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/785886122" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mongdang-/224320127146" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.1</div>
-<div class="academy-info">
-<div class="academy-name">물아혜서원학원</div>
-<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로5길 17 , 501,502호 (일로읍)</p>
+  <div class="card-links"><a href="https://blog.naver.com/hy_stories/224323553364" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>메이저고등수학전문학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/337485430" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mulahyi/224316317338" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">플라톤아카데미오룡독서논술교습소</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡중앙북로 65 303호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1441903236" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/newfine_elemid/224319998843" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>박태백수학교습소</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/kmskhj1211/224315575718" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="과학">
-<div class="section-title">과학 (1개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">하연과학실험행복교습소</div>
-<div class="academy-meta"><span>언급 3회/20회</span><span>15% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">50% (선호)</span><span class="mention-text">블로그 2회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 185 , 상가 208호 (일로읍, 호반써밋APT)</p>
+  <div class="card-links"><a href="https://blog.naver.com/jhpp12/223267235308" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="과학"><div class="section-header"><h2>과학</h2><span class="section-count">1개 학원</span></div><div class="academy-card data-subject="과학">
+<div class="card-title-row">
+  <h3>하연과학실험행복교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/suyoyo/224294269888" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="종합/입시">
-<div class="section-title">종합/입시 (7개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>26.6</div>
-<div class="academy-info">
-<div class="academy-name">문키문해력학원</div>
-<div class="academy-meta"><span>언급 16회/17회</span><span>94% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">15% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡교육로5길 17 , 에듀플렉스 401호 (일로읍)</p>
+  <div class="card-links"><a href="https://blog.naver.com/suyoyo/224294269888" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="종합/입시"><div class="section-header"><h2>종합/입시</h2><span class="section-count">7개 학원</span></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>문키문해력학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">94</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/244144046" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/silvermi26/224265696211" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>19.5</div>
-<div class="academy-info">
-<div class="academy-name">눈높이러닝센터오룡학원</div>
-<div class="academy-meta"><span>언급 6회/6회</span><span>100% (전문)</span><span>📞 061-282-0902</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">94% (전문)</span><span class="mention-text">블로그 17회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡남로3길 3 203호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/244144046" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/silvermi26/224265696211" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>눈높이러닝센터오룡학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">68</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/gangmom_/223962270495" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>3.6</div>
-<div class="academy-info">
-<div class="academy-name">오룡이나르샤학원</div>
-<div class="academy-meta"><span>언급 2회/6회</span><span>33% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 6회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악5로48번길 5 , 2층 (삼향읍)</p>
+  <p class="card-phone">📞 <a href="tel:061-282-0902">061-282-0902</a></p><div class="card-links"><a href="https://blog.naver.com/gangmom_/223962270495" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>오룡이나르샤학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">21</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/939349655" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/akekdthkl200/223283098146" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.1</div>
-<div class="academy-info">
-<div class="academy-name">씨앤하이학원</div>
-<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">33% (지역)</span><span class="mention-text">블로그 6회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오룡번영로 62 202호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/939349655" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/akekdthkl200/223283098146" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>씨앤하이학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/bwiwd/224321925450" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.6</div>
-<div class="academy-info">
-<div class="academy-name">CMS목포남악영재학원</div>
-<div class="academy-meta"><span>언급 1회/12회</span><span>8% (지역)</span><span>📞 061-285-0807</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">10% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 일로읍 오남로1길 11-5 , 4층 (일로읍)</p>
+  <div class="card-links"><a href="https://blog.naver.com/bwiwd/224321925450" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>웅진씽크빅스마트클래스남악2학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/cms_namak/223945641003" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">웅진씽크빅스마트클래스남악2학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 061-283-1505</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악4로34번길 31 , 상가 203호 (삼향읍, 남악 세영리첼 아파트)</p>
+  <p class="card-phone">📞 <a href="tel:061-283-1505">061-283-1505</a></p><div class="card-links"><a href="https://blog.naver.com/aptlfthsu/224323347594" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>목포무안공무원학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/aptlfthsu/224323347594" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>0.3</div>
-<div class="academy-info">
-<div class="academy-name">목포무안공무원학원</div>
-<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">5% (지역)</span><span class="mention-text">블로그 20회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악4로82번길 13 402호</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/101749394" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/inhyangin/224315899087" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>CMS목포남악영재학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">14</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/101749394" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/inhyangin/224315899087" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">8% (지역)</span><span class="mention-text">블로그 12회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 전라남도 무안군 삼향읍 남악2로74번길 39 , 5층 (삼향읍,광일프라자)</p>
+  <p class="card-phone">📞 <a href="tel:061-285-0807">061-285-0807</a></p><div class="card-links"><a href="https://blog.naver.com/cms_namak/223945641003" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
 <footer class="site-footer">
 <p class="footer-cta">학원 등록 및 광고 문의: <a href="mailto:themakings.official01@gmail.com">themakings.official01@gmail.com</a></p>
 <p class="footer-copy">© 2026 THE MAKINGS · <a href="https://themakings.co.kr">메인으로 돌아가기</a></p>
-</footer>
-<script>
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const subj=btn.dataset.subj;
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));
-    document.querySelectorAll('.section-block').forEach(sec=>{
-      sec.style.display=(subj==='전체'||sec.dataset.subj===subj)?'':'none';
+</footer><script>
+function filterSubject(subj, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.subject-section').forEach(sec => {
+        sec.classList.toggle('hidden', subj !== 'all' && sec.dataset.subject !== subj);
     });
-  });
-});
-document.querySelectorAll('.more-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    btn.previousElementSibling.querySelectorAll('.hidden').forEach(el=>el.classList.remove('hidden'));
-    btn.remove();
-  });
-});
+}
+function toggleMore(btn, subj) {
+    const cards = document.querySelectorAll(`.academy-card[data-subject="${subj}"][data-once="1"]`);
+    const isHidden = cards[0] && cards[0].classList.contains('hidden');
+    cards.forEach(c => c.classList.toggle('hidden', !isHidden));
+    btn.textContent = isHidden ? '▲ 1회 언급 학원 접기' : `▼ 1회 언급 학원 ${cards.length}개 더 보기`;
+}
 </script></body></html>

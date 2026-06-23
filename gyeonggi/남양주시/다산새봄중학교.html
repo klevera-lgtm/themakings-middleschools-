@@ -1,334 +1,459 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<title>다산새봄중학교 근처 학원 리스트 | THE MAKINGS</title>
-<meta name="description" content="경기도 남양주시 다산새봄중학교 근처 중학교 내신 전문 학원 리스트. 총 29개 학원 정보.">
-<link rel="canonical" href="https://middle.themakings.co.kr/gyeonggi/%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C/%EB%8B%A4%EC%82%B0%EC%83%88%EB%B4%84%EC%A4%91%ED%95%99%EA%B5%90.html">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>다산새봄중학교 근처 학원 추천 | 경기도 남양주시 | THE MAKINGS</title>
+<meta name="description" content="다산새봄중학교 학생들이 많이 다니는 학원 리스트. 29개 학원, 전문도 기반 정렬.">
+<link rel="canonical" href="https://middle.themakings.co.kr/gyeonggi/남양주시/다산새봄중학교.html">
+<style>*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--accent:#2563eb;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
 body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 .site-header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100}
 .header-inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none}
+.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none;letter-spacing:-.5px}
 .header-nav a{font-size:14px;color:var(--text-sub);text-decoration:none;margin:0 10px;font-weight:500}
-.header-nav a:hover,.header-nav a.active{color:var(--pink)}
-.breadcrumb{max-width:960px;margin:16px auto 0;padding:0 20px;font-size:14px;color:var(--text-sub)}
-.breadcrumb a{color:var(--pink);text-decoration:none}
-.breadcrumb span{margin:0 6px}
-.hero{max-width:960px;margin:0 auto;padding:28px 20px 20px;text-align:center}
-.hero h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
-.hero-sub{font-size:14px;color:var(--text-sub);margin-bottom:16px}
-.hero-stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto;padding:0 20px 40px}
-.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s}
-.nav-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
-.nav-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--pink)}
-.nav-card p{font-size:13px;color:var(--text-sub)}
-.filter-bar{max-width:960px;margin:0 auto 16px;padding:0 20px;display:flex;gap:8px;flex-wrap:wrap}
-.filter-btn{border:1px solid var(--border);background:#fff;border-radius:100px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
-.filter-btn:hover,.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
-.section-block{max-width:960px;margin:0 auto 24px;padding:0 20px}
-.section-title{font-size:17px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--pink)}
-.academy-list{display:flex;flex-direction:column;gap:8px}
-.academy-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.score-badge{min-width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;flex-shrink:0}
-.score-badge.green{background:#22c55e}.score-badge.orange{background:#f97316}.score-badge.gray{background:#9ca3af}
-.academy-info{flex:1;min-width:0}
-.academy-name{font-weight:700;font-size:14px;margin-bottom:2px}
-.academy-meta{font-size:12px;color:var(--text-sub);display:flex;gap:8px;flex-wrap:wrap}
-.academy-links{display:flex;gap:6px;flex-shrink:0}
-.btn-link{font-size:11px;padding:4px 8px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text-sub)}
-.btn-link:hover{border-color:var(--pink);color:var(--pink)}
-.more-btn{display:block;width:100%;margin-top:8px;padding:8px;text-align:center;background:#f3f4f6;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text-sub)}
-.more-btn:hover{background:#e5e7eb}
-.hidden{display:none}
-.score-info-box{max-width:960px;margin:0 auto 16px;padding:0 20px}
-.score-info-inner{background:#fff7fb;border:1px solid #fce7f3;border-radius:10px;padding:14px 18px}
-.score-info-title{font-weight:700;font-size:14px;margin-bottom:6px}
-.score-info-desc{font-size:13px;color:var(--text-sub);margin-bottom:8px;line-height:1.6}
-.score-info-levels{display:flex;gap:12px;flex-wrap:wrap}
-.score-level{font-size:12px;font-weight:600;padding:3px 10px;border-radius:100px}
-.score-level.green{background:#dcfce7;color:#166534}
-.score-level.orange{background:#ffedd5;color:#9a3412}
-.score-level.gray{background:#f3f4f6;color:#6b7280}
-.site-footer{background:#fff;border-top:1px solid var(--border);padding:36px 20px;text-align:center;margin-top:20px}
-.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}
-.footer-cta a{color:var(--pink);text-decoration:none}
-.footer-copy{font-size:13px;color:var(--text-sub);margin-top:10px}
-.footer-copy a{color:var(--pink);text-decoration:none}
-@media(max-width:640px){.hero h1{font-size:20px}.header-nav{display:none}.card-grid{grid-template-columns:1fr 1fr}.academy-card{flex-wrap:wrap}}
-</style></head><body>
-<header class="site-header"><div class="header-inner">
-<a href="/themakings-middleschools-/" class="logo">THE MAKINGS</a>
-<nav class="header-nav"><a href="/themakings-middleschools-/seoul/" >서울</a><a href="/themakings-middleschools-/incheon/" >인천</a><a href="/themakings-middleschools-/gyeonggi/" class="active">경기</a><a href="/themakings-middleschools-/busan/" >부산</a><a href="/themakings-middleschools-/daegu/" >대구</a><a href="/themakings-middleschools-/daejeon/" >대전</a><a href="/themakings-middleschools-/gwangju/" >광주</a><a href="/themakings-middleschools-/ulsan/" >울산</a><a href="/themakings-middleschools-/sejong/" >세종</a><a href="/themakings-middleschools-/gangwon/" >강원</a><a href="/themakings-middleschools-/gyeongnam/" >경남</a><a href="/themakings-middleschools-/gyeongbuk/" >경북</a><a href="/themakings-middleschools-/chungnam/" >충남</a><a href="/themakings-middleschools-/chungbuk/" >충북</a><a href="/themakings-middleschools-/jeonnam/" >전남</a><a href="/themakings-middleschools-/jeonbuk/" >전북</a><a href="/themakings-middleschools-/jeju/" >제주</a></nav>
-</div></header>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/gyeonggi/">경기도</a><span>›</span><a href="/gyeonggi/%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C/">남양주시</a><span>›</span>다산새봄중학교</div>
+.header-nav a:hover{color:var(--pink)}
+.breadcrumb{max-width:960px;margin:0 auto;padding:16px 20px 0;font-size:16px;color:var(--pink);font-weight:600}
+.breadcrumb a{color:var(--pink);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb span{margin:0 6px}
+.hero{max-width:960px;margin:0 auto;padding:32px 20px 16px;text-align:center}
+.hero h1{font-size:28px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px;line-height:1.3}
+.hero-sub{font-size:15px;color:var(--text-sub);margin-bottom:20px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:600}
+.score-info-box{max-width:960px;margin:0 auto 8px;padding:0 20px}
+.score-info-inner{background:#fdf2f8;border:1px solid #f9a8d4;border-left:4px solid var(--pink);border-radius:var(--radius);padding:16px 20px}
+.score-info-title{font-size:14px;font-weight:700;color:#be185d;margin-bottom:6px}
+.score-info-desc{font-size:13px;color:#9d174d;line-height:1.6;margin-bottom:10px}
+.score-info-levels{display:flex;gap:16px;flex-wrap:wrap}
+.score-level{font-size:12px;font-weight:600;padding:4px 10px;border-radius:100px}
+.score-level.green{background:#f0fdf4;color:#15803d}
+.score-level.orange{background:#fff7ed;color:#c2410c}
+.score-level.gray{background:#f9fafb;color:#6b7280;border:1px solid #e5e7eb}
+.filter-bar{max-width:960px;margin:0 auto;padding:8px 20px 20px;display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;font-family:inherit;color:var(--text-sub);display:flex;align-items:center;gap:4px}
+.filter-btn:hover{border-color:var(--pink);color:var(--pink)}
+.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.filter-btn .count{font-size:11px;opacity:.7}
+.subject-section{max-width:960px;margin:0 auto;padding:0 20px}
+.section-header{display:flex;align-items:center;justify-content:space-between;padding:24px 0 8px;border-bottom:2px solid var(--text);margin-bottom:12px}
+.section-header h2{font-size:20px;font-weight:800}.section-count{font-size:13px;color:var(--text-sub);font-weight:500}
+.subject-section.hidden{display:none}
+.academy-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:box-shadow .2s,border-color .2s;margin-bottom:12px}
+.academy-card:hover{box-shadow:var(--shadow-lg);border-color:#d1d5db}
+.academy-card.hidden{display:none}
+.card-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.card-title-row h3{font-size:17px;font-weight:700;line-height:1.3}
+.score-badge{display:flex;flex-direction:column;align-items:center;padding:6px 14px;border-radius:10px;flex-shrink:0;min-width:72px}
+.score-label{font-size:10px;font-weight:600;opacity:.8}
+.score-number{font-size:22px;font-weight:800;line-height:1.1;letter-spacing:-1px}
+.card-meta{font-size:12px;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.conc-badge{font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px}
+.mention-text{font-size:12px;color:var(--text-sub)}
+.card-body{font-size:14px}.card-address{color:var(--text-sub);margin-bottom:4px}
+.card-phone{margin-bottom:4px}.card-phone a{color:var(--accent);text-decoration:none;font-weight:500}
+.card-links{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.link-btn{font-size:13px;padding:6px 12px;border-radius:8px;text-decoration:none;font-weight:500;transition:opacity .15s}
+.link-btn:hover{opacity:.8}.link-btn.kakao{background:#fee500;color:#3c1e1e}.link-btn.blog{background:#e8f5e9;color:#2e7d32}
+.more-btn-wrap{max-width:960px;margin:0 auto;padding:0 20px 16px}
+.more-btn{width:100%;padding:12px;background:var(--card-bg);border:1px dashed var(--border);border-radius:var(--radius);font-size:13px;color:var(--text-sub);cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s}
+.more-btn:hover{border-color:var(--pink);color:var(--pink)}
+.school-list{max-width:960px;margin:0 auto;padding:0 20px 40px}
+.school-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.school-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.school-card:hover{box-shadow:var(--shadow-lg)}.school-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.school-card p{font-size:13px;color:var(--text-sub)}
+.district-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.district-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.district-card:hover{box-shadow:var(--shadow-lg)}.district-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.district-card p{font-size:13px;color:var(--text-sub)}
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.city-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s;text-align:center}
+.city-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
+.city-card h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.city-card p{font-size:14px;color:var(--text-sub)}
+.site-footer{background:#fff;border-top:1px solid var(--border);padding:40px 20px;text-align:center}
+.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}.footer-cta a{color:var(--pink);text-decoration:none}
+.footer-copy{font-size:13px;color:var(--text-sub);margin-top:12px}.footer-copy a{color:var(--pink);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:22px}.header-nav a{margin:0 6px}.stat-chip{font-size:12px;padding:6px 12px}.filter-btn{padding:6px 10px;font-size:12px}.card-title-row{flex-direction:column;gap:8px}.score-badge{flex-direction:row;gap:8px;min-width:auto;padding:6px 12px}.score-info-levels{gap:8px}.section-header h2{font-size:17px}.city-grid{grid-template-columns:1fr}}</style></head><body>
+<header class="site-header"><div class="header-inner"><a href="https://themakings.co.kr/" class="logo">THE MAKINGS</a><nav class="header-nav" style="margin-left:0;"><a href="/themakings-middleschools-/seoul/">서울</a><a href="/themakings-middleschools-/incheon/">인천</a><a href="/themakings-middleschools-/gyeonggi/">경기</a><a href="/themakings-middleschools-/busan/">부산</a><a href="/themakings-middleschools-/daegu/">대구</a><a href="/themakings-middleschools-/daejeon/">대전</a><a href="/themakings-middleschools-/gwangju/">광주</a><a href="/themakings-middleschools-/ulsan/">울산</a><a href="/themakings-middleschools-/sejong/">세종</a><a href="/themakings-middleschools-/gangwon/">강원</a><a href="/themakings-middleschools-/gyeongnam/">경남</a><a href="/themakings-middleschools-/gyeongbuk/">경북</a><a href="/themakings-middleschools-/chungnam/">충남</a><a href="/themakings-middleschools-/chungbuk/">충북</a><a href="/themakings-middleschools-/jeonnam/">전남</a><a href="/themakings-middleschools-/jeonbuk/">전북</a><a href="/themakings-middleschools-/jeju/">제주</a></nav></div></header>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
+<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/gyeonggi/">경기도</a><span>›</span><a href="/themakings-middleschools-/gyeonggi/%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C/">남양주시</a><span>›</span>다산새봄중학교</div>
 <section class="hero">
-<h1>다산새봄중학교<br><span style="font-size:18px;color:var(--text-sub)">근처 학원 리스트</span></h1>
+<h1>다산새봄중학교<br><span style="font-size:20px;color:var(--text-sub)">근처 학원 리스트</span></h1>
 <p class="hero-sub">경기도 남양주시 · 중학교</p>
 <div class="hero-stats"><div class="stat-chip">📚 29개 학원</div><div class="stat-chip">🏫 전문도 기반 정렬</div></div>
 </section>
 <div class="score-info-box"><div class="score-info-inner">
 <div class="score-info-title">📊 전문도란?</div>
 <div class="score-info-desc">이 학원이 블로그에서 우리 학교를 얼마나 집중적으로 언급했는지 보여주는 지표예요.<br>언급 횟수가 많고 집중도가 높을수록 우리 학교 학생들이 즐겨 찾는 학원일 가능성이 높습니다.</div>
-<div class="score-info-levels"><span class="score-level green">🟢 집중도 70%+ 전문</span><span class="score-level orange">🟠 40~69% 선호</span><span class="score-level gray">⚪ 40% 미만 지역</span></div>
-</div></div>
-<div class="filter-bar"><button class="filter-btn active" data-subj="전체">전체</button><button class="filter-btn" data-subj="영어">영어</button><button class="filter-btn" data-subj="수학">수학</button><button class="filter-btn" data-subj="국어">국어</button><button class="filter-btn" data-subj="종합/입시">종합/입시</button></div>
-<div class="section-block" data-subj="영어">
-<div class="section-title">영어 (6개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>25.6</div>
-<div class="academy-info">
-<div class="academy-name">플랭영어학원</div>
-<div class="academy-meta"><span>언급 12회/12회</span><span>100% (전문)</span><span>📞 010-3800-3465</span></div>
+<div class="score-info-levels">
+<span class="score-level green">🟢 집중도 70%+ 전문</span>
+<span class="score-level orange">🟠 40~69% 선호</span>
+<span class="score-level gray">⚪ 40% 미만 지역</span>
+</div></div></div>
+<div class="filter-bar"><button class="filter-btn active" onclick="filterSubject('all',this)">전체 <span class="count">29</span></button><button class="filter-btn" onclick="filterSubject('국어',this)">국어 <span class="count">2</span></button><button class="filter-btn" onclick="filterSubject('영어',this)">영어 <span class="count">6</span></button><button class="filter-btn" onclick="filterSubject('수학',this)">수학 <span class="count">9</span></button><button class="filter-btn" onclick="filterSubject('종합/입시',this)">종합/입시 <span class="count">12</span></button></div>
+<div class="subject-section" data-subject="국어"><div class="section-header"><h2>국어</h2><span class="section-count">2개 학원</span></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>리딩오션독서논술학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">73</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/341963166" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/plangenglish/224047694633" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>16.1</div>
-<div class="academy-info">
-<div class="academy-name">챌린지아카데미어학원</div>
-<div class="academy-meta"><span>언급 4회/4회</span><span>100% (전문)</span><span>📞 031-563-3690</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 7회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 356 , 404호 (다산동, 푸리마타워)</p>
+  <div class="card-links"><a href="https://blog.naver.com/kim109101/224140769623" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>이영미국어논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">51</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/383437992" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/dasanchallenge/222885791507" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>16.1</div>
-<div class="academy-info">
-<div class="academy-name">킹스어학원</div>
-<div class="academy-meta"><span>언급 4회/4회</span><span>100% (전문)</span><span>📞 031-551-0579</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">21% (지역)</span><span class="mention-text">블로그 347회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 미금로 239 , 512,513,514호 (다산동, 광장프라자)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1441503058" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/haohao0830/223451404814" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div class="subject-section" data-subject="영어"><div class="section-header"><h2>영어</h2><span class="section-count">6개 학원</span></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>플랭영어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">90</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1619984064" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hakmi72/223888222155" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>6.0</div>
-<div class="academy-info">
-<div class="academy-name">에이닷영어학원</div>
-<div class="academy-meta"><span>언급 7회/69회</span><span>29% (지역)</span><span>📞 031-593-5466</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 12회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로171번길 32 , 306호 (다산동)</p>
+  <p class="card-phone">📞 <a href="tel:010-3800-3465">010-3800-3465</a></p><div class="card-links"><a href="http://place.map.kakao.com/341963166" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/plangenglish/224047694633" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>챌린지아카데미어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">56</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/2087816269" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/adot_topyeong/223706180007" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.6</div>
-<div class="academy-info">
-<div class="academy-name">다산참수학영어학원</div>
-<div class="academy-meta"><span>언급 1회/131회</span><span>37% (지역)</span><span>📞 031-558-0982</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 4회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 356 , 603호 604호 606호 (다산동, 푸리마타워)</p>
+  <p class="card-phone">📞 <a href="tel:031-563-3690">031-563-3690</a></p><div class="card-links"><a href="http://place.map.kakao.com/383437992" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/dasanchallenge/222885791507" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>킹스어학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">56</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1200226842" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/charm_academy/223740155665" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-<div class="academy-list"><div class="academy-card hidden">
-<div class="score-badge gray" style="font-size:11px">지역</div>
-<div class="academy-info">
-<div class="academy-name">벨트영어수학학원</div>
-<div class="academy-meta"><span>언급 1회</span><span>📞 031-550-0845</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 4회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 356 , 401호 402호 (다산동, 푸리마타워)</p>
+  <p class="card-phone">📞 <a href="tel:031-551-0579">031-551-0579</a></p><div class="card-links"><a href="http://place.map.kakao.com/1619984064" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hakmi72/223888222155" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>에이닷영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">39</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1570298897" target="_blank" class="btn-link">카카오맵</a></div>
-</div></div><button class="more-btn">+ 1개 더 보기</button>
-</div><div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div><div class="section-block" data-subj="수학">
-<div class="section-title">수학 (9개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>31.4</div>
-<div class="academy-info">
-<div class="academy-name">탑수학교습소</div>
-<div class="academy-meta"><span>언급 22회/22회</span><span>100% (전문)</span><span>📞 010-7529-6046</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">29% (지역)</span><span class="mention-text">블로그 69회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 늘을1로16번길 25 , 301호 (호평동, 성보빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:031-593-5466">031-593-5466</a></p><div class="card-links"><a href="http://place.map.kakao.com/2087816269" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/adot_topyeong/223706180007" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>다산참수학영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">32</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1669256242" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/kdooley/223962406376" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>17.9</div>
-<div class="academy-info">
-<div class="academy-name">K수학학원</div>
-<div class="academy-meta"><span>언급 5회/5회</span><span>100% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">37% (지역)</span><span class="mention-text">블로그 131회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 도농로 29 , 602~603호 (다산동, 부영프라자)</p>
+  <p class="card-phone">📞 <a href="tel:031-558-0982">031-558-0982</a></p><div class="card-links"><a href="http://place.map.kakao.com/1200226842" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/charm_academy/223740155665" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="more-btn-wrap"><button class="more-btn" onclick="toggleMore(this,'영어')">▼ 1회 언급 학원 1개 더 보기</button></div><div class="academy-card hidden data-subject="영어" data-once="1">
+<div class="card-title-row">
+  <h3>벨트영어수학학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">24</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1363544590" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/soso1992-/224274500179" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>13.9</div>
-<div class="academy-info">
-<div class="academy-name">LMPS수학학원</div>
-<div class="academy-meta"><span>언급 47회/431회</span><span>36% (지역)</span><span>📞 031-557-7747</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 1회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로 117 , 711호,712호 (다산동, 다산진건지구 업무1-2)</p>
+  <p class="card-phone">📞 <a href="tel:031-550-0845">031-550-0845</a></p><div class="card-links"><a href="http://place.map.kakao.com/1570298897" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/tjdgh2565/224252765719" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="수학"><div class="section-header"><h2>수학</h2><span class="section-count">9개 학원</span></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>탑수학교습소</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">99</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1823926323" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/lmps1004/224180417495" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>11.0</div>
-<div class="academy-info">
-<div class="academy-name">SMC수학학원</div>
-<div class="academy-meta"><span>언급 2회/2회</span><span>100% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 22회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 진접읍 금강로 1530-12 , 206호 (진접읍, 진접하우스토리아파트)</p>
+  <p class="card-phone">📞 <a href="tel:010-7529-6046">010-7529-6046</a></p><div class="card-links"><a href="http://place.map.kakao.com/1669256242" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/kdooley/223962406376" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>LMPS수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">72</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/dssmcmath/223928346953" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>7.0</div>
-<div class="academy-info">
-<div class="academy-name">이쌤스킬수학학원</div>
-<div class="academy-meta"><span>언급 10회/48회</span><span>29% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">36% (지역)</span><span class="mention-text">블로그 431회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로146번길 12-16 , 404호, 601~603호 (다산동)</p>
+  <p class="card-phone">📞 <a href="tel:031-557-7747">031-557-7747</a></p><div class="card-links"><a href="http://place.map.kakao.com/1823926323" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/lmps1004/224180417495" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>K수학학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">63</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/8376647/223085606360" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.0</div>
-<div class="academy-info">
-<div class="academy-name">원수학교습소</div>
-<div class="academy-meta"><span>언급 4회/13회</span><span>31% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 5회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 420 , 503호 (다산동)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1363544590" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/soso1992-/224274500179" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>이쌤스킬수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">40</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/onemath0114/224286429080" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>3.7</div>
-<div class="academy-info">
-<div class="academy-name">더매쓰수학학원</div>
-<div class="academy-meta"><span>언급 4회/126회</span><span>23% (지역)</span><span>📞 031-575-5849</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">29% (지역)</span><span class="mention-text">블로그 48회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로 109 , 302-1호, 308-1호 (다산동, 다산진건지구 업무1-4)</p>
+  <div class="card-links"><a href="https://blog.naver.com/8376647/223085606360" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>SMC수학학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">38</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/932075748" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/fandomath/224235891418" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>3.5</div>
-<div class="academy-info">
-<div class="academy-name">깊은생각수학학원</div>
-<div class="academy-meta"><span>언급 1회/2회</span><span>50% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 2회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 356 , 701호 (다산동, 푸리마타워)</p>
+  <div class="card-links"><a href="https://blog.naver.com/dssmcmath/223928346953" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>더매쓰수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">35</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1970309555" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/eatfunandgo/224301940373" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.6</div>
-<div class="academy-info">
-<div class="academy-name">클래스원수학학원</div>
-<div class="academy-meta"><span>언급 2회/38회</span><span>24% (지역)</span><span>📞 031-592-3111</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">23% (지역)</span><span class="mention-text">블로그 126회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 별내3로 340 , 602-1 (별내동,천보프라자)</p>
+  <p class="card-phone">📞 <a href="tel:031-575-5849">031-575-5849</a></p><div class="card-links"><a href="http://place.map.kakao.com/932075748" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/fandomath/224235891418" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>원수학교습소</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">28</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/171840745" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/s-school/223088056215" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="국어">
-<div class="section-title">국어 (2개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>20.8</div>
-<div class="academy-info">
-<div class="academy-name">리딩오션독서논술학원</div>
-<div class="academy-meta"><span>언급 7회/7회</span><span>100% (전문)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">31% (지역)</span><span class="mention-text">블로그 13회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로172번길 36 , 304호 (다산동)</p>
+  <div class="card-links"><a href="https://blog.naver.com/onemath0114/224286429080" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>클래스원수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">26</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/kim109101/224140769623" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>7.2</div>
-<div class="academy-info">
-<div class="academy-name">이영미국어논술학원</div>
-<div class="academy-meta"><span>언급 30회/347회</span><span>21% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">24% (지역)</span><span class="mention-text">블로그 38회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 늘을1로16번길 29 , 201호 전부 (호평동, 늘봄타워)</p>
+  <p class="card-phone">📞 <a href="tel:031-592-3111">031-592-3111</a></p><div class="card-links"><a href="http://place.map.kakao.com/171840745" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/s-school/223088056215" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>깊은생각수학학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1441503058" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/haohao0830/223451404814" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="종합/입시">
-<div class="section-title">종합/입시 (12개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>30.3</div>
-<div class="academy-info">
-<div class="academy-name">원리탐구학원</div>
-<div class="academy-meta"><span>언급 70회/99회</span><span>71% (전문)</span><span>📞 031-565-1239</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">50% (선호)</span><span class="mention-text">블로그 2회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 별내3로 340 , 204호 (별내동)</p>
+  <div class="card-links"><a href="http://place.map.kakao.com/1970309555" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/eatfunandgo/224301940373" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="종합/입시"><div class="section-header"><h2>종합/입시</h2><span class="section-count">12개 학원</span></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>원리탐구학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">99</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1103431324" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ontomath/224269531213" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>15.9</div>
-<div class="academy-info">
-<div class="academy-name">최선학원</div>
-<div class="academy-meta"><span>언급 43회/103회</span><span>42% (선호)</span><span>📞 031-564-1109</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">71% (전문)</span><span class="mention-text">블로그 99회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로 119 , 605호 (다산동, 다산진건지구 업무1-1)</p>
+  <p class="card-phone">📞 <a href="tel:031-565-1239">031-565-1239</a></p><div class="card-links"><a href="http://place.map.kakao.com/1103431324" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/ontomath/224269531213" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>최선학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">71</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/26087500" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/chasun1109/223848480820" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>11.0</div>
-<div class="academy-info">
-<div class="academy-name">엠베스트SE위너스학원</div>
-<div class="academy-meta"><span>언급 2회/2회</span><span>100% (전문)</span><span>📞 031-522-5737</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">42% (선호)</span><span class="mention-text">블로그 103회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 미금로 180 , 3층 (지금동, 한강빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:031-564-1109">031-564-1109</a></p><div class="card-links"><a href="http://place.map.kakao.com/26087500" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/chasun1109/223848480820" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>가우스학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">56</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1855264654" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/winmentor/224206946681" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>11.0</div>
-<div class="academy-info">
-<div class="academy-name">위너스학원</div>
-<div class="academy-meta"><span>언급 2회/2회</span><span>100% (전문)</span><span>📞 031-572-7116</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">31% (지역)</span><span class="mention-text">블로그 151회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 가운로2길 73   3층 302호 (가운동)</p>
+  <p class="card-phone">📞 <a href="tel:031-555-6617">031-555-6617</a></p><div class="card-links"><a href="http://place.map.kakao.com/830692073" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/newspringgauss/223012012539" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>다산미래학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">41</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/8479265" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/winmentor/224206946681" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>10.2</div>
-<div class="academy-info">
-<div class="academy-name">가우스학원</div>
-<div class="academy-meta"><span>언급 26회/151회</span><span>31% (지역)</span><span>📞 031-555-6617</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">23% (지역)</span><span class="mention-text">블로그 206회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 459 , 4층일부, 5층일부 (다산동)</p>
+  <p class="card-phone">📞 <a href="tel:031-555-1230">031-555-1230</a></p><div class="card-links"><a href="http://place.map.kakao.com/1526334220" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/dasanmirae1/223827606766" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>다산점와와학습코칭학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">41</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/830692073" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/newspringgauss/223012012539" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge green">전문<br>5.7</div>
-<div class="academy-info">
-<div class="academy-name">다산점와와학습코칭학원</div>
-<div class="academy-meta"><span>언급 1회/123회</span><span>82% (전문)</span><span>📞 031-568-8328</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">82% (전문)</span><span class="mention-text">블로그 123회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로146번길 12-14 , 604호 (다산동)</p>
+  <p class="card-phone">📞 <a href="tel:031-568-8328">031-568-8328</a></p><div class="card-links"><a href="http://place.map.kakao.com/1987117418" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/clean13602/223469913994" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>엠베스트SE위너스학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">38</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1987117418" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/clean13602/223469913994" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>4.8</div>
-<div class="academy-info">
-<div class="academy-name">다산미래학원</div>
-<div class="academy-meta"><span>언급 7회/206회</span><span>23% (지역)</span><span>📞 031-555-1230</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 2회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산중앙로 117 , 613~615호 (다산동, 다산진건지구 업무1-2)</p>
+  <p class="card-phone">📞 <a href="tel:031-522-5737">031-522-5737</a></p><div class="card-links"><a href="http://place.map.kakao.com/1855264654" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/winmentor/224206946681" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>위너스학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">38</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1526334220" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/dasanmirae1/223827606766" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>4.2</div>
-<div class="academy-info">
-<div class="academy-name">압구정명문학원</div>
-<div class="academy-meta"><span>언급 4회/35회</span><span>26% (지역)</span><span>📞 031-577-5508</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 2회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 진접읍 장현로 77 , 302호,303호 (진접읍)</p>
+  <p class="card-phone">📞 <a href="tel:031-572-7116">031-572-7116</a></p><div class="card-links"><a href="http://place.map.kakao.com/8479265" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/winmentor/224206946681" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>다산지금점와와학습코칭학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">33</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/440692447" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/amacademy_m/224285405936" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>3.8</div>
-<div class="academy-info">
-<div class="academy-name">서림학원</div>
-<div class="academy-meta"><span>언급 2회/17회</span><span>35% (지역)</span><span>📞 031-510-1999</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">48% (선호)</span><span class="mention-text">블로그 93회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산지금로 139 , 308호, 309호 (다산동)</p>
+  <div class="card-links"><a href="https://blog.naver.com/unhnd6469/224110855879" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>압구정명문학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">30</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/782921993" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/seorimmath/224212987234" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>3.3</div>
-<div class="academy-info">
-<div class="academy-name">박준영논리속독학원</div>
-<div class="academy-meta"><span>언급 2회/10회</span><span>30% (지역)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">26% (지역)</span><span class="mention-text">블로그 35회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 와부읍 덕소로 73 , 305-1호 (와부읍, 세양아르비채리버)</p>
+  <p class="card-phone">📞 <a href="tel:031-577-5508">031-577-5508</a></p><div class="card-links"><a href="http://place.map.kakao.com/440692447" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/amacademy_m/224285405936" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>서림학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">26</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/threhr1153/224037507731" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>3.3</div>
-<div class="academy-info">
-<div class="academy-name">다산지금점와와학습코칭학원</div>
-<div class="academy-meta"><span>언급 1회/93회</span><span>48% (선호)</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">35% (지역)</span><span class="mention-text">블로그 17회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 경춘로 456 , 3층 (다산동)</p>
+  <p class="card-phone">📞 <a href="tel:031-510-1999">031-510-1999</a></p><div class="card-links"><a href="http://place.map.kakao.com/782921993" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/seorimmath/224212987234" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>박준영논리속독학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">22</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/unhnd6469/224110855879" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-<div class="academy-list"><div class="academy-card hidden">
-<div class="score-badge gray" style="font-size:11px">지역</div>
-<div class="academy-info">
-<div class="academy-name">큰솔학원</div>
-<div class="academy-meta"><span>언급 1회</span><span>📞 031-568-3398</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">30% (지역)</span><span class="mention-text">블로그 10회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 424 , 401호, 402호 (다산동, 성산타워플레이스2)</p>
+  <div class="card-links"><a href="https://blog.naver.com/threhr1153/224037507731" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="more-btn-wrap"><button class="more-btn" onclick="toggleMore(this,'종합/입시')">▼ 1회 언급 학원 1개 더 보기</button></div><div class="academy-card hidden data-subject="종합/입시" data-once="1">
+<div class="card-title-row">
+  <h3>큰솔학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">24</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1045108384" target="_blank" class="btn-link">카카오맵</a></div>
-</div></div><button class="more-btn">+ 1개 더 보기</button>
-</div>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 1회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 남양주시 다산순환로 420 , 404호 (다산동)</p>
+  <p class="card-phone">📞 <a href="tel:031-568-3398">031-568-3398</a></p><div class="card-links"><a href="http://place.map.kakao.com/1045108384" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/keunsol77/222613997742" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
 <footer class="site-footer">
 <p class="footer-cta">학원 등록 및 광고 문의: <a href="mailto:themakings.official01@gmail.com">themakings.official01@gmail.com</a></p>
 <p class="footer-copy">© 2026 THE MAKINGS · <a href="https://themakings.co.kr">메인으로 돌아가기</a></p>
-</footer>
-<script>
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const subj=btn.dataset.subj;
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));
-    document.querySelectorAll('.section-block').forEach(sec=>{
-      sec.style.display=(subj==='전체'||sec.dataset.subj===subj)?'':'none';
+</footer><script>
+function filterSubject(subj, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.subject-section').forEach(sec => {
+        sec.classList.toggle('hidden', subj !== 'all' && sec.dataset.subject !== subj);
     });
-  });
-});
-document.querySelectorAll('.more-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    btn.previousElementSibling.querySelectorAll('.hidden').forEach(el=>el.classList.remove('hidden'));
-    btn.remove();
-  });
-});
+}
+function toggleMore(btn, subj) {
+    const cards = document.querySelectorAll(`.academy-card[data-subject="${subj}"][data-once="1"]`);
+    const isHidden = cards[0] && cards[0].classList.contains('hidden');
+    cards.forEach(c => c.classList.toggle('hidden', !isHidden));
+    btn.textContent = isHidden ? '▲ 1회 언급 학원 접기' : `▼ 1회 언급 학원 ${cards.length}개 더 보기`;
+}
 </script></body></html>

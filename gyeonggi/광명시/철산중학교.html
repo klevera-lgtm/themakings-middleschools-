@@ -1,299 +1,399 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<title>철산중학교 근처 학원 리스트 | THE MAKINGS</title>
-<meta name="description" content="경기도 광명시 철산중학교 근처 중학교 내신 전문 학원 리스트. 총 24개 학원 정보.">
-<link rel="canonical" href="https://middle.themakings.co.kr/gyeonggi/%EA%B4%91%EB%AA%85%EC%8B%9C/%EC%B2%A0%EC%82%B0%EC%A4%91%ED%95%99%EA%B5%90.html">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>철산중학교 근처 학원 추천 | 경기도 광명시 | THE MAKINGS</title>
+<meta name="description" content="철산중학교 학생들이 많이 다니는 학원 리스트. 24개 학원, 전문도 기반 정렬.">
+<link rel="canonical" href="https://middle.themakings.co.kr/gyeonggi/광명시/철산중학교.html">
+<style>*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--accent:#2563eb;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
 body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 .site-header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100}
 .header-inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none}
+.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none;letter-spacing:-.5px}
 .header-nav a{font-size:14px;color:var(--text-sub);text-decoration:none;margin:0 10px;font-weight:500}
-.header-nav a:hover,.header-nav a.active{color:var(--pink)}
-.breadcrumb{max-width:960px;margin:16px auto 0;padding:0 20px;font-size:14px;color:var(--text-sub)}
-.breadcrumb a{color:var(--pink);text-decoration:none}
-.breadcrumb span{margin:0 6px}
-.hero{max-width:960px;margin:0 auto;padding:28px 20px 20px;text-align:center}
-.hero h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
-.hero-sub{font-size:14px;color:var(--text-sub);margin-bottom:16px}
-.hero-stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto;padding:0 20px 40px}
-.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s}
-.nav-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
-.nav-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--pink)}
-.nav-card p{font-size:13px;color:var(--text-sub)}
-.filter-bar{max-width:960px;margin:0 auto 16px;padding:0 20px;display:flex;gap:8px;flex-wrap:wrap}
-.filter-btn{border:1px solid var(--border);background:#fff;border-radius:100px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
-.filter-btn:hover,.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
-.section-block{max-width:960px;margin:0 auto 24px;padding:0 20px}
-.section-title{font-size:17px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--pink)}
-.academy-list{display:flex;flex-direction:column;gap:8px}
-.academy-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.score-badge{min-width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;flex-shrink:0}
-.score-badge.green{background:#22c55e}.score-badge.orange{background:#f97316}.score-badge.gray{background:#9ca3af}
-.academy-info{flex:1;min-width:0}
-.academy-name{font-weight:700;font-size:14px;margin-bottom:2px}
-.academy-meta{font-size:12px;color:var(--text-sub);display:flex;gap:8px;flex-wrap:wrap}
-.academy-links{display:flex;gap:6px;flex-shrink:0}
-.btn-link{font-size:11px;padding:4px 8px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text-sub)}
-.btn-link:hover{border-color:var(--pink);color:var(--pink)}
-.more-btn{display:block;width:100%;margin-top:8px;padding:8px;text-align:center;background:#f3f4f6;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text-sub)}
-.more-btn:hover{background:#e5e7eb}
-.hidden{display:none}
-.score-info-box{max-width:960px;margin:0 auto 16px;padding:0 20px}
-.score-info-inner{background:#fff7fb;border:1px solid #fce7f3;border-radius:10px;padding:14px 18px}
-.score-info-title{font-weight:700;font-size:14px;margin-bottom:6px}
-.score-info-desc{font-size:13px;color:var(--text-sub);margin-bottom:8px;line-height:1.6}
-.score-info-levels{display:flex;gap:12px;flex-wrap:wrap}
-.score-level{font-size:12px;font-weight:600;padding:3px 10px;border-radius:100px}
-.score-level.green{background:#dcfce7;color:#166534}
-.score-level.orange{background:#ffedd5;color:#9a3412}
-.score-level.gray{background:#f3f4f6;color:#6b7280}
-.site-footer{background:#fff;border-top:1px solid var(--border);padding:36px 20px;text-align:center;margin-top:20px}
-.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}
-.footer-cta a{color:var(--pink);text-decoration:none}
-.footer-copy{font-size:13px;color:var(--text-sub);margin-top:10px}
-.footer-copy a{color:var(--pink);text-decoration:none}
-@media(max-width:640px){.hero h1{font-size:20px}.header-nav{display:none}.card-grid{grid-template-columns:1fr 1fr}.academy-card{flex-wrap:wrap}}
-</style></head><body>
-<header class="site-header"><div class="header-inner">
-<a href="/themakings-middleschools-/" class="logo">THE MAKINGS</a>
-<nav class="header-nav"><a href="/themakings-middleschools-/seoul/" >서울</a><a href="/themakings-middleschools-/incheon/" >인천</a><a href="/themakings-middleschools-/gyeonggi/" class="active">경기</a><a href="/themakings-middleschools-/busan/" >부산</a><a href="/themakings-middleschools-/daegu/" >대구</a><a href="/themakings-middleschools-/daejeon/" >대전</a><a href="/themakings-middleschools-/gwangju/" >광주</a><a href="/themakings-middleschools-/ulsan/" >울산</a><a href="/themakings-middleschools-/sejong/" >세종</a><a href="/themakings-middleschools-/gangwon/" >강원</a><a href="/themakings-middleschools-/gyeongnam/" >경남</a><a href="/themakings-middleschools-/gyeongbuk/" >경북</a><a href="/themakings-middleschools-/chungnam/" >충남</a><a href="/themakings-middleschools-/chungbuk/" >충북</a><a href="/themakings-middleschools-/jeonnam/" >전남</a><a href="/themakings-middleschools-/jeonbuk/" >전북</a><a href="/themakings-middleschools-/jeju/" >제주</a></nav>
-</div></header>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/gyeonggi/">경기도</a><span>›</span><a href="/gyeonggi/%EA%B4%91%EB%AA%85%EC%8B%9C/">광명시</a><span>›</span>철산중학교</div>
+.header-nav a:hover{color:var(--pink)}
+.breadcrumb{max-width:960px;margin:0 auto;padding:16px 20px 0;font-size:16px;color:var(--pink);font-weight:600}
+.breadcrumb a{color:var(--pink);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb span{margin:0 6px}
+.hero{max-width:960px;margin:0 auto;padding:32px 20px 16px;text-align:center}
+.hero h1{font-size:28px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px;line-height:1.3}
+.hero-sub{font-size:15px;color:var(--text-sub);margin-bottom:20px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:600}
+.score-info-box{max-width:960px;margin:0 auto 8px;padding:0 20px}
+.score-info-inner{background:#fdf2f8;border:1px solid #f9a8d4;border-left:4px solid var(--pink);border-radius:var(--radius);padding:16px 20px}
+.score-info-title{font-size:14px;font-weight:700;color:#be185d;margin-bottom:6px}
+.score-info-desc{font-size:13px;color:#9d174d;line-height:1.6;margin-bottom:10px}
+.score-info-levels{display:flex;gap:16px;flex-wrap:wrap}
+.score-level{font-size:12px;font-weight:600;padding:4px 10px;border-radius:100px}
+.score-level.green{background:#f0fdf4;color:#15803d}
+.score-level.orange{background:#fff7ed;color:#c2410c}
+.score-level.gray{background:#f9fafb;color:#6b7280;border:1px solid #e5e7eb}
+.filter-bar{max-width:960px;margin:0 auto;padding:8px 20px 20px;display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;font-family:inherit;color:var(--text-sub);display:flex;align-items:center;gap:4px}
+.filter-btn:hover{border-color:var(--pink);color:var(--pink)}
+.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.filter-btn .count{font-size:11px;opacity:.7}
+.subject-section{max-width:960px;margin:0 auto;padding:0 20px}
+.section-header{display:flex;align-items:center;justify-content:space-between;padding:24px 0 8px;border-bottom:2px solid var(--text);margin-bottom:12px}
+.section-header h2{font-size:20px;font-weight:800}.section-count{font-size:13px;color:var(--text-sub);font-weight:500}
+.subject-section.hidden{display:none}
+.academy-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:box-shadow .2s,border-color .2s;margin-bottom:12px}
+.academy-card:hover{box-shadow:var(--shadow-lg);border-color:#d1d5db}
+.academy-card.hidden{display:none}
+.card-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.card-title-row h3{font-size:17px;font-weight:700;line-height:1.3}
+.score-badge{display:flex;flex-direction:column;align-items:center;padding:6px 14px;border-radius:10px;flex-shrink:0;min-width:72px}
+.score-label{font-size:10px;font-weight:600;opacity:.8}
+.score-number{font-size:22px;font-weight:800;line-height:1.1;letter-spacing:-1px}
+.card-meta{font-size:12px;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.conc-badge{font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px}
+.mention-text{font-size:12px;color:var(--text-sub)}
+.card-body{font-size:14px}.card-address{color:var(--text-sub);margin-bottom:4px}
+.card-phone{margin-bottom:4px}.card-phone a{color:var(--accent);text-decoration:none;font-weight:500}
+.card-links{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.link-btn{font-size:13px;padding:6px 12px;border-radius:8px;text-decoration:none;font-weight:500;transition:opacity .15s}
+.link-btn:hover{opacity:.8}.link-btn.kakao{background:#fee500;color:#3c1e1e}.link-btn.blog{background:#e8f5e9;color:#2e7d32}
+.more-btn-wrap{max-width:960px;margin:0 auto;padding:0 20px 16px}
+.more-btn{width:100%;padding:12px;background:var(--card-bg);border:1px dashed var(--border);border-radius:var(--radius);font-size:13px;color:var(--text-sub);cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s}
+.more-btn:hover{border-color:var(--pink);color:var(--pink)}
+.school-list{max-width:960px;margin:0 auto;padding:0 20px 40px}
+.school-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.school-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.school-card:hover{box-shadow:var(--shadow-lg)}.school-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.school-card p{font-size:13px;color:var(--text-sub)}
+.district-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.district-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s}
+.district-card:hover{box-shadow:var(--shadow-lg)}.district-card h3{font-size:16px;font-weight:700;margin-bottom:4px}.district-card p{font-size:13px;color:var(--text-sub)}
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.city-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s;text-align:center}
+.city-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
+.city-card h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.city-card p{font-size:14px;color:var(--text-sub)}
+.site-footer{background:#fff;border-top:1px solid var(--border);padding:40px 20px;text-align:center}
+.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}.footer-cta a{color:var(--pink);text-decoration:none}
+.footer-copy{font-size:13px;color:var(--text-sub);margin-top:12px}.footer-copy a{color:var(--pink);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:22px}.header-nav a{margin:0 6px}.stat-chip{font-size:12px;padding:6px 12px}.filter-btn{padding:6px 10px;font-size:12px}.card-title-row{flex-direction:column;gap:8px}.score-badge{flex-direction:row;gap:8px;min-width:auto;padding:6px 12px}.score-info-levels{gap:8px}.section-header h2{font-size:17px}.city-grid{grid-template-columns:1fr}}</style></head><body>
+<header class="site-header"><div class="header-inner"><a href="https://themakings.co.kr/" class="logo">THE MAKINGS</a><nav class="header-nav" style="margin-left:0;"><a href="/themakings-middleschools-/seoul/">서울</a><a href="/themakings-middleschools-/incheon/">인천</a><a href="/themakings-middleschools-/gyeonggi/">경기</a><a href="/themakings-middleschools-/busan/">부산</a><a href="/themakings-middleschools-/daegu/">대구</a><a href="/themakings-middleschools-/daejeon/">대전</a><a href="/themakings-middleschools-/gwangju/">광주</a><a href="/themakings-middleschools-/ulsan/">울산</a><a href="/themakings-middleschools-/sejong/">세종</a><a href="/themakings-middleschools-/gangwon/">강원</a><a href="/themakings-middleschools-/gyeongnam/">경남</a><a href="/themakings-middleschools-/gyeongbuk/">경북</a><a href="/themakings-middleschools-/chungnam/">충남</a><a href="/themakings-middleschools-/chungbuk/">충북</a><a href="/themakings-middleschools-/jeonnam/">전남</a><a href="/themakings-middleschools-/jeonbuk/">전북</a><a href="/themakings-middleschools-/jeju/">제주</a></nav></div></header>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
+<div class="breadcrumb"><a href="/themakings-middleschools-/">홈</a><span>›</span><a href="/themakings-middleschools-/gyeonggi/">경기도</a><span>›</span><a href="/themakings-middleschools-/gyeonggi/%EA%B4%91%EB%AA%85%EC%8B%9C/">광명시</a><span>›</span>철산중학교</div>
 <section class="hero">
-<h1>철산중학교<br><span style="font-size:18px;color:var(--text-sub)">근처 학원 리스트</span></h1>
+<h1>철산중학교<br><span style="font-size:20px;color:var(--text-sub)">근처 학원 리스트</span></h1>
 <p class="hero-sub">경기도 광명시 · 중학교</p>
 <div class="hero-stats"><div class="stat-chip">📚 24개 학원</div><div class="stat-chip">🏫 전문도 기반 정렬</div></div>
 </section>
 <div class="score-info-box"><div class="score-info-inner">
 <div class="score-info-title">📊 전문도란?</div>
 <div class="score-info-desc">이 학원이 블로그에서 우리 학교를 얼마나 집중적으로 언급했는지 보여주는 지표예요.<br>언급 횟수가 많고 집중도가 높을수록 우리 학교 학생들이 즐겨 찾는 학원일 가능성이 높습니다.</div>
-<div class="score-info-levels"><span class="score-level green">🟢 집중도 70%+ 전문</span><span class="score-level orange">🟠 40~69% 선호</span><span class="score-level gray">⚪ 40% 미만 지역</span></div>
-</div></div>
-<div class="filter-bar"><button class="filter-btn active" data-subj="전체">전체</button><button class="filter-btn" data-subj="영어">영어</button><button class="filter-btn" data-subj="수학">수학</button><button class="filter-btn" data-subj="국어">국어</button><button class="filter-btn" data-subj="종합/입시">종합/입시</button></div>
-<div class="section-block" data-subj="영어">
-<div class="section-title">영어 (8개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>19.5</div>
-<div class="academy-info">
-<div class="academy-name">철산영어교습소</div>
-<div class="academy-meta"><span>언급 6회/6회</span><span>100% (전문)</span><span>📞 02-899-3405</span></div>
+<div class="score-info-levels">
+<span class="score-level green">🟢 집중도 70%+ 전문</span>
+<span class="score-level orange">🟠 40~69% 선호</span>
+<span class="score-level gray">⚪ 40% 미만 지역</span>
+</div></div></div>
+<div class="filter-bar"><button class="filter-btn active" onclick="filterSubject('all',this)">전체 <span class="count">24</span></button><button class="filter-btn" onclick="filterSubject('국어',this)">국어 <span class="count">4</span></button><button class="filter-btn" onclick="filterSubject('영어',this)">영어 <span class="count">8</span></button><button class="filter-btn" onclick="filterSubject('수학',this)">수학 <span class="count">5</span></button><button class="filter-btn" onclick="filterSubject('종합/입시',this)">종합/입시 <span class="count">7</span></button></div>
+<div class="subject-section" data-subject="국어"><div class="section-header"><h2>국어</h2><span class="section-count">4개 학원</span></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>일편단심국어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">50</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1360377419" target="_blank" class="btn-link">카카오맵</a><a href="https://dnqwpez64322.tistory.com/99" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>10.5</div>
-<div class="academy-info">
-<div class="academy-name">김영아영어교습소</div>
-<div class="academy-meta"><span>언급 8회/40회</span><span>48% (선호)</span><span>📞 02-898-1105</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">19% (지역)</span><span class="mention-text">블로그 295회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 오리로 857 , 601호 (철산동, 일청빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-2681-3333">02-2681-3333</a></p><div class="card-links"><a href="http://place.map.kakao.com/228454880" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/ildanstudy/222950156306" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>홍선생국어논술학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">34</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1787048096" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/justink1025/221510116054" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.8</div>
-<div class="academy-info">
-<div class="academy-name">람파스영어학원</div>
-<div class="academy-meta"><span>언급 15회/140회</span><span>21% (지역)</span><span>📞 02-2683-8209</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">32% (지역)</span><span class="mention-text">블로그 44회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 디지털로33번길 15 , 3층 일부(302호) (철산동,세창빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-899-2012">02-899-2012</a></p><div class="card-links"><a href="http://place.map.kakao.com/14081008" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hongedu6828/222427908192" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>진국어학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">28</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/jk_happy_eng/221660137439" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>4.9</div>
-<div class="academy-info">
-<div class="academy-name">광명프라미스어학원</div>
-<div class="academy-meta"><span>언급 6회/24회</span><span>25% (지역)</span><span>📞 02-899-2722</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">46% (선호)</span><span class="mention-text">블로그 13회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 철산로 21 , 2층 2호 (철산동, 광명빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-2611-3174">02-2611-3174</a></p><div class="card-links"><a href="https://blog.naver.com/nansunnymmm/223906011740" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="국어">
+<div class="card-title-row">
+  <h3>진국어사회학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">17</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/552642801" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/promiseedudream/223439361216" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>3.5</div>
-<div class="academy-info">
-<div class="academy-name">하이제니영어학원</div>
-<div class="academy-meta"><span>언급 1회/2회</span><span>50% (선호)</span><span>📞 02-2066-2469</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">40% (선호)</span><span class="mention-text">블로그 5회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 철산로 27 , 명동빌딩 401호 (철산동)</p>
+  <p class="card-phone">📞 <a href="tel:02-897-3174">02-897-3174</a></p><div class="card-links"><a href="http://place.map.kakao.com/685394698" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/panther119/222412751868" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div class="subject-section" data-subject="영어"><div class="section-header"><h2>영어</h2><span class="section-count">8개 학원</span></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>철산영어교습소</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">68</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/488060471" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/highjennyenglish/223112042117" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.3</div>
-<div class="academy-info">
-<div class="academy-name">정상어학원</div>
-<div class="academy-meta"><span>언급 1회/12회</span><span>33% (지역)</span><span>📞 02-2612-4200</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">100% (전문)</span><span class="mention-text">블로그 6회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 광덕산로 26  두산위브 단지내상가 310호 (하안동)</p>
+  <p class="card-phone">📞 <a href="tel:02-899-3405">02-899-3405</a></p><div class="card-links"><a href="http://place.map.kakao.com/1360377419" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://dnqwpez64322.tistory.com/99" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>김영아영어교습소</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">50</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1141230968" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jls2555/224285435579" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.1</div>
-<div class="academy-info">
-<div class="academy-name">앤디안영어수학학원</div>
-<div class="academy-meta"><span>언급 1회/13회</span><span>31% (지역)</span><span>📞 02-2682-0817</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">48% (선호)</span><span class="mention-text">블로그 40회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 범안로 1042 , 701-3호 (하안동, 제일빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-898-1105">02-898-1105</a></p><div class="card-links"><a href="http://place.map.kakao.com/1787048096" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/justink1025/221510116054" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>람파스영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">42</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/toptutoring/221208839652" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.7</div>
-<div class="academy-info">
-<div class="academy-name">제아영어학원</div>
-<div class="academy-meta"><span>언급 1회/8회</span><span>25% (지역)</span><span>📞 02-6264-5454</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">21% (지역)</span><span class="mention-text">블로그 140회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 철산로 3-9 , 9층 일부 (철산동,성림빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-2683-8209">02-2683-8209</a></p><div class="card-links"><a href="https://blog.naver.com/jk_happy_eng/221660137439" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>광명프라미스어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">31</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1024042065" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jeaenglish0612/223832245131" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div><div class="section-block" data-subj="수학">
-<div class="section-title">수학 (5개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge gray">지역<br>9.9</div>
-<div class="academy-info">
-<div class="academy-name">광명수학학원</div>
-<div class="academy-meta"><span>언급 44회/1422회</span><span>26% (지역)</span><span>📞 02-2066-4248</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">25% (지역)</span><span class="mention-text">블로그 24회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 범안로 1030 , 301호~306호 (하안동, 삼화교육센터)</p>
+  <p class="card-phone">📞 <a href="tel:02-899-2722">02-899-2722</a></p><div class="card-links"><a href="http://place.map.kakao.com/552642801" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/promiseedudream/223439361216" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>정상어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">20</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/598839076" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/amathman/224302071627" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>8.3</div>
-<div class="academy-info">
-<div class="academy-name">하피수학학원</div>
-<div class="academy-meta"><span>언급 8회/21회</span><span>38% (지역)</span><span>📞 02-899-7360</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">33% (지역)</span><span class="mention-text">블로그 12회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 오리로 657 , 3층 일부 (하안동,제일은행)</p>
+  <p class="card-phone">📞 <a href="tel:02-2612-4200">02-2612-4200</a></p><div class="card-links"><a href="http://place.map.kakao.com/1141230968" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/jls2555/224285435579" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>앤디안영어수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">20</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/184933548" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hapimath_aca/222544996853" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.9</div>
-<div class="academy-info">
-<div class="academy-name">플래너수학학원</div>
-<div class="academy-meta"><span>언급 8회/30회</span><span>27% (지역)</span><span>📞 02-2612-3100</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">31% (지역)</span><span class="mention-text">블로그 13회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 철산로 36 , 알렉스타워 1001호 일부 (철산동)</p>
+  <p class="card-phone">📞 <a href="tel:02-2682-0817">02-2682-0817</a></p><div class="card-links"><a href="https://blog.naver.com/toptutoring/221208839652" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>제아영어학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/11603801" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/plannermath/223870844290" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>3.0</div>
-<div class="academy-info">
-<div class="academy-name">케이스수학학원</div>
-<div class="academy-meta"><span>언급 5회/53회</span><span>17% (지역)</span><span>📞 02-2066-0951</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">25% (지역)</span><span class="mention-text">블로그 8회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 광덕산로 33 , 경흥빌딩 4층일부 (하안동,경흥빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-6264-5454">02-6264-5454</a></p><div class="card-links"><a href="http://place.map.kakao.com/1024042065" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/jeaenglish0612/223832245131" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="영어">
+<div class="card-title-row">
+  <h3>하이제니영어학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/15539962" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/caseedu/224300208398" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.7</div>
-<div class="academy-info">
-<div class="academy-name">유투엠수학학원</div>
-<div class="academy-meta"><span>언급 1회/8회</span><span>25% (지역)</span><span>📞 02-898-7749</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">50% (선호)</span><span class="mention-text">블로그 2회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 디지털로 56 , 상가 304호, 305호, 306호 (철산동, 철산래미안자이)</p>
+  <p class="card-phone">📞 <a href="tel:02-2066-2469">02-2066-2469</a></p><div class="card-links"><a href="http://place.map.kakao.com/488060471" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/highjennyenglish/223112042117" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="수학"><div class="section-header"><h2>수학</h2><span class="section-count">5개 학원</span></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>광명수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">66</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/u2mgm/220989450685" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="국어">
-<div class="section-title">국어 (4개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge gray">지역<br>7.1</div>
-<div class="academy-info">
-<div class="academy-name">일편단심국어학원</div>
-<div class="academy-meta"><span>언급 41회/295회</span><span>19% (지역)</span><span>📞 02-2681-3333</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">26% (지역)</span><span class="mention-text">블로그 1422회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 도덕로54번길 4   송정빌딩 302호 (광명동)</p>
+  <p class="card-phone">📞 <a href="tel:02-2066-4248">02-2066-4248</a></p><div class="card-links"><a href="http://place.map.kakao.com/598839076" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/amathman/224302071627" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>하피수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">41</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/228454880" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ildanstudy/222950156306" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>5.2</div>
-<div class="academy-info">
-<div class="academy-name">홍선생국어논술학원</div>
-<div class="academy-meta"><span>언급 4회/44회</span><span>32% (지역)</span><span>📞 02-899-2012</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">38% (지역)</span><span class="mention-text">블로그 21회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 범안로 1049 , 601호 (하안동, 성원빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-899-7360">02-899-7360</a></p><div class="card-links"><a href="http://place.map.kakao.com/184933548" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/hapimath_aca/222544996853" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>플래너수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">35</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/14081008" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hongedu6828/222427908192" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>5.1</div>
-<div class="academy-info">
-<div class="academy-name">진국어학원</div>
-<div class="academy-meta"><span>언급 2회/13회</span><span>46% (선호)</span><span>📞 02-2611-3174</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">27% (지역)</span><span class="mention-text">블로그 30회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 광덕산로 33 , 효현빌딩 2층 일부 (하안동, 효현빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-2612-3100">02-2612-3100</a></p><div class="card-links"><a href="http://place.map.kakao.com/11603801" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/plannermath/223870844290" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>케이스수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">29</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/nansunnymmm/223906011740" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>2.8</div>
-<div class="academy-info">
-<div class="academy-name">진국어사회학원</div>
-<div class="academy-meta"><span>언급 1회/5회</span><span>40% (선호)</span><span>📞 02-897-3174</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">17% (지역)</span><span class="mention-text">블로그 53회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 철산로 45 , 3층일부, 4층일부 (철산동, 광명시사회체육센터)</p>
+  <p class="card-phone">📞 <a href="tel:02-2066-0951">02-2066-0951</a></p><div class="card-links"><a href="http://place.map.kakao.com/15539962" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/caseedu/224300208398" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="수학">
+<div class="card-title-row">
+  <h3>유투엠수학학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">16</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/685394698" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/panther119/222412751868" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div><div class="section-block" data-subj="종합/입시">
-<div class="section-title">종합/입시 (7개)</div>
-<div class="academy-list"><div class="academy-card">
-<div class="score-badge green">전문<br>22.7</div>
-<div class="academy-info">
-<div class="academy-name">지존학원</div>
-<div class="academy-meta"><span>언급 16회/215회</span><span>80% (전문)</span><span>📞 02-6339-0910</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">25% (지역)</span><span class="mention-text">블로그 8회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 하안로288번길 15 , 301호일부 (하안동, 조일프라자)</p>
+  <p class="card-phone">📞 <a href="tel:02-898-7749">02-898-7749</a></p><div class="card-links"><a href="https://blog.naver.com/u2mgm/220989450685" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div><div class="subject-section" data-subject="종합/입시"><div class="section-header"><h2>종합/입시</h2><span class="section-count">7개 학원</span></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>지존학원</h3>
+  <div class="score-badge" style="background:#f0fdf4;color:#15803d">
+    <span class="score-label">전문도</span>
+    <span class="score-number">95</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/chrisfritz/224251969882" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>12.5</div>
-<div class="academy-info">
-<div class="academy-name">철산점와와학습코칭학원</div>
-<div class="academy-meta"><span>언급 26회/179회</span><span>38% (지역)</span><span>📞 02-718-8463</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f0fdf4;color:#15803d">80% (전문)</span><span class="mention-text">블로그 215회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 광복로 68 , 4층 (철산동)</p>
+  <p class="card-phone">📞 <a href="tel:02-6339-0910">02-6339-0910</a></p><div class="card-links"><a href="https://blog.naver.com/chrisfritz/224251969882" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>철산점와와학습코칭학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">64</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1987372484" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/lessonkwmr/223839871223" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>8.3</div>
-<div class="academy-info">
-<div class="academy-name">광명학원</div>
-<div class="academy-meta"><span>언급 21회/436회</span><span>27% (지역)</span><span>📞 02-2611-0220</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">38% (지역)</span><span class="mention-text">블로그 179회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 도덕공원로 27 , 2층 (철산동)</p>
+  <p class="card-phone">📞 <a href="tel:02-718-8463">02-718-8463</a></p><div class="card-links"><a href="http://place.map.kakao.com/1987372484" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/lessonkwmr/223839871223" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>광명학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">55</span>
+  </div>
 </div>
-<div class="academy-links"><a href="https://blog.naver.com/botc7ywd/224223437539" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>6.4</div>
-<div class="academy-info">
-<div class="academy-name">차오름학원</div>
-<div class="academy-meta"><span>언급 20회/247회</span><span>21% (지역)</span><span>📞 02-898-2034</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">27% (지역)</span><span class="mention-text">블로그 436회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 오리로 857 , 일청빌딩 402, 403호일부 (철산동)</p>
+  <p class="card-phone">📞 <a href="tel:02-2611-0220">02-2611-0220</a></p><div class="card-links"><a href="https://blog.naver.com/botc7ywd/224223437539" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>차오름학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">47</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/1043307260" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/chaoreumgm/224294393538" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge orange">선호<br>4.0</div>
-<div class="academy-info">
-<div class="academy-name">광명점와와학습코칭학원</div>
-<div class="academy-meta"><span>언급 1회/75회</span><span>57% (선호)</span><span>📞 02-2686-9078</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">21% (지역)</span><span class="mention-text">블로그 247회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 범안로 1050 , 1002호 (하안동)</p>
+  <p class="card-phone">📞 <a href="tel:02-898-2034">02-898-2034</a></p><div class="card-links"><a href="http://place.map.kakao.com/1043307260" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/chaoreumgm/224294393538" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>광명점와와학습코칭학원</h3>
+  <div class="score-badge" style="background:#fff7ed;color:#c2410c">
+    <span class="score-label">전문도</span>
+    <span class="score-number">34</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/920824095" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/qsconvert/224089897357" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>2.6</div>
-<div class="academy-info">
-<div class="academy-name">아가토스학원</div>
-<div class="academy-meta"><span>언급 1회/8회</span><span>38% (지역)</span><span>📞 02-894-4276</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#fff7ed;color:#c2410c">57% (선호)</span><span class="mention-text">블로그 75회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 광명로 823 , 701호 (광명동, 현대타운)</p>
+  <p class="card-phone">📞 <a href="tel:02-2686-9078">02-2686-9078</a></p><div class="card-links"><a href="http://place.map.kakao.com/920824095" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/qsconvert/224089897357" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>광명입시학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">24</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/22216059" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/csiyong/223338341944" target="_blank" class="btn-link">블로그</a></div>
-</div><div class="academy-card">
-<div class="score-badge gray">지역<br>1.6</div>
-<div class="academy-info">
-<div class="academy-name">광명입시학원</div>
-<div class="academy-meta"><span>언급 1회/47회</span><span>23% (지역)</span><span>📞 02-2611-0110</span></div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">23% (지역)</span><span class="mention-text">블로그 47회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 오리로 857 , 403호 일부, 406호 (철산동, 일청빌딩)</p>
+  <p class="card-phone">📞 <a href="tel:02-2611-0110">02-2611-0110</a></p><div class="card-links"><a href="http://place.map.kakao.com/22046208" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/jk_happy_eng/224272457215" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div><div class="academy-card data-subject="종합/입시">
+<div class="card-title-row">
+  <h3>아가토스학원</h3>
+  <div class="score-badge" style="background:#f9fafb;color:#6b7280">
+    <span class="score-label">전문도</span>
+    <span class="score-number">19</span>
+  </div>
 </div>
-<div class="academy-links"><a href="http://place.map.kakao.com/22046208" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jk_happy_eng/224272457215" target="_blank" class="btn-link">블로그</a></div>
-</div></div>
-
-</div>
-<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
+<div class="card-meta"><span class="conc-badge" style="background:#f9fafb;color:#6b7280">38% (지역)</span><span class="mention-text">블로그 8회 언급</span></div>
+<div class="card-body">
+  <p class="card-address">📍 경기도 광명시 하안로 298  현대빌딩 6층 (하안동)</p>
+  <p class="card-phone">📞 <a href="tel:02-894-4276">02-894-4276</a></p><div class="card-links"><a href="http://place.map.kakao.com/22216059" class="link-btn kakao" target="_blank" rel="nofollow noopener">🗺 카카오맵</a><a href="https://blog.naver.com/csiyong/223338341944" class="link-btn blog" target="_blank" rel="nofollow noopener">📝 관련 블로그</a></div>
+</div></div></div>
+<div style="text-align:center;margin:20px auto;width:100%;display:flex;justify-content:center;"><div style="width:100%;max-width:960px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
 <footer class="site-footer">
 <p class="footer-cta">학원 등록 및 광고 문의: <a href="mailto:themakings.official01@gmail.com">themakings.official01@gmail.com</a></p>
 <p class="footer-copy">© 2026 THE MAKINGS · <a href="https://themakings.co.kr">메인으로 돌아가기</a></p>
-</footer>
-<script>
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const subj=btn.dataset.subj;
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));
-    document.querySelectorAll('.section-block').forEach(sec=>{
-      sec.style.display=(subj==='전체'||sec.dataset.subj===subj)?'':'none';
+</footer><script>
+function filterSubject(subj, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.subject-section').forEach(sec => {
+        sec.classList.toggle('hidden', subj !== 'all' && sec.dataset.subject !== subj);
     });
-  });
-});
-document.querySelectorAll('.more-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    btn.previousElementSibling.querySelectorAll('.hidden').forEach(el=>el.classList.remove('hidden'));
-    btn.remove();
-  });
-});
+}
+function toggleMore(btn, subj) {
+    const cards = document.querySelectorAll(`.academy-card[data-subject="${subj}"][data-once="1"]`);
+    const isHidden = cards[0] && cards[0].classList.contains('hidden');
+    cards.forEach(c => c.classList.toggle('hidden', !isHidden));
+    btn.textContent = isHidden ? '▲ 1회 언급 학원 접기' : `▼ 1회 언급 학원 ${cards.length}개 더 보기`;
+}
 </script></body></html>
