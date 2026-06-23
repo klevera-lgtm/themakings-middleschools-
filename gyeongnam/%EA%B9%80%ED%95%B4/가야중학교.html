@@ -1,0 +1,551 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>가야중학교 근처 학원 리스트 | THE MAKINGS</title>
+<meta name="description" content="경상남도 김해 가야중학교 근처 중학교 내신 전문 학원 리스트. 총 60개 학원 정보.">
+<link rel="canonical" href="https://middle.themakings.co.kr/gyeongnam/%EA%B9%80%ED%95%B4/%EA%B0%80%EC%95%BC%EC%A4%91%ED%95%99%EA%B5%90.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8f9fb;--card-bg:#fff;--text:#1a1a2e;--text-sub:#6b7280;--pink:#e84393;--border:#e5e7eb;--radius:12px;--shadow-lg:0 4px 20px rgba(0,0,0,.08)}
+body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+.site-header{background:#fff;border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100}
+.header-inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.logo{font-weight:800;font-size:28px;color:var(--pink);text-decoration:none}
+.header-nav a{font-size:14px;color:var(--text-sub);text-decoration:none;margin:0 10px;font-weight:500}
+.header-nav a:hover,.header-nav a.active{color:var(--pink)}
+.breadcrumb{max-width:960px;margin:16px auto 0;padding:0 20px;font-size:14px;color:var(--text-sub)}
+.breadcrumb a{color:var(--pink);text-decoration:none}
+.breadcrumb span{margin:0 6px}
+.hero{max-width:960px;margin:0 auto;padding:28px 20px 20px;text-align:center}
+.hero h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
+.hero-sub{font-size:14px;color:var(--text-sub);margin-bottom:16px}
+.hero-stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.stat-chip{background:var(--card-bg);border:1px solid var(--border);border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto;padding:0 20px 40px}
+.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-decoration:none;color:var(--text);transition:box-shadow .2s,border-color .2s}
+.nav-card:hover{box-shadow:var(--shadow-lg);border-color:var(--pink)}
+.nav-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--pink)}
+.nav-card p{font-size:13px;color:var(--text-sub)}
+.filter-bar{max-width:960px;margin:0 auto 16px;padding:0 20px;display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{border:1px solid var(--border);background:#fff;border-radius:100px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
+.filter-btn:hover,.filter-btn.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.section-block{max-width:960px;margin:0 auto 24px;padding:0 20px}
+.section-title{font-size:17px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--pink)}
+.academy-list{display:flex;flex-direction:column;gap:8px}
+.academy-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.score-badge{min-width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;flex-shrink:0}
+.score-badge.green{background:#22c55e}.score-badge.orange{background:#f97316}.score-badge.gray{background:#9ca3af}
+.academy-info{flex:1;min-width:0}
+.academy-name{font-weight:700;font-size:14px;margin-bottom:2px}
+.academy-meta{font-size:12px;color:var(--text-sub);display:flex;gap:8px;flex-wrap:wrap}
+.academy-links{display:flex;gap:6px;flex-shrink:0}
+.btn-link{font-size:11px;padding:4px 8px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text-sub)}
+.btn-link:hover{border-color:var(--pink);color:var(--pink)}
+.more-btn{display:block;width:100%;margin-top:8px;padding:8px;text-align:center;background:#f3f4f6;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text-sub)}
+.more-btn:hover{background:#e5e7eb}
+.hidden{display:none}
+.score-info-box{max-width:960px;margin:0 auto 16px;padding:0 20px}
+.score-info-inner{background:#fff7fb;border:1px solid #fce7f3;border-radius:10px;padding:14px 18px}
+.score-info-title{font-weight:700;font-size:14px;margin-bottom:6px}
+.score-info-desc{font-size:13px;color:var(--text-sub);margin-bottom:8px;line-height:1.6}
+.score-info-levels{display:flex;gap:12px;flex-wrap:wrap}
+.score-level{font-size:12px;font-weight:600;padding:3px 10px;border-radius:100px}
+.score-level.green{background:#dcfce7;color:#166534}
+.score-level.orange{background:#ffedd5;color:#9a3412}
+.score-level.gray{background:#f3f4f6;color:#6b7280}
+.site-footer{background:#fff;border-top:1px solid var(--border);padding:36px 20px;text-align:center;margin-top:20px}
+.footer-cta{font-size:15px;font-weight:600;margin-bottom:8px}
+.footer-cta a{color:var(--pink);text-decoration:none}
+.footer-copy{font-size:13px;color:var(--text-sub);margin-top:10px}
+.footer-copy a{color:var(--pink);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:20px}.header-nav{display:none}.card-grid{grid-template-columns:1fr 1fr}.academy-card{flex-wrap:wrap}}
+</style></head><body>
+<header class="site-header"><div class="header-inner">
+<a href="/" class="logo">THE MAKINGS</a>
+<nav class="header-nav"><a href="/seoul/" >서울</a><a href="/incheon/" >인천</a><a href="/gyeonggi/" >경기</a><a href="/busan/" >부산</a><a href="/daegu/" >대구</a><a href="/daejeon/" >대전</a><a href="/gwangju/" >광주</a><a href="/ulsan/" >울산</a><a href="/sejong/" >세종</a><a href="/gangwon/" >강원</a><a href="/gyeongnam/" class="active">경남</a><a href="/gyeongbuk/" >경북</a><a href="/chungnam/" >충남</a><a href="/chungbuk/" >충북</a><a href="/jeonnam/" >전남</a><a href="/jeonbuk/" >전북</a><a href="/jeju/" >제주</a></nav>
+</div></header>
+<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="4154182247" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="breadcrumb"><a href="/">홈</a><span>›</span><a href="/gyeongnam/">경상남도</a><span>›</span><a href="/gyeongnam/%EA%B9%80%ED%95%B4/">김해</a><span>›</span>가야중학교</div>
+<section class="hero">
+<h1>가야중학교<br><span style="font-size:18px;color:var(--text-sub)">근처 학원 리스트</span></h1>
+<p class="hero-sub">경상남도 김해 · 중학교</p>
+<div class="hero-stats"><div class="stat-chip">📚 60개 학원</div><div class="stat-chip">🏫 전문도 기반 정렬</div></div>
+</section>
+<div class="score-info-box"><div class="score-info-inner">
+<div class="score-info-title">📊 전문도란?</div>
+<div class="score-info-desc">이 학원이 블로그에서 우리 학교를 얼마나 집중적으로 언급했는지 보여주는 지표예요.<br>언급 횟수가 많고 집중도가 높을수록 우리 학교 학생들이 즐겨 찾는 학원일 가능성이 높습니다.</div>
+<div class="score-info-levels"><span class="score-level green">🟢 집중도 70%+ 전문</span><span class="score-level orange">🟠 40~69% 선호</span><span class="score-level gray">⚪ 40% 미만 지역</span></div>
+</div></div>
+<div class="filter-bar"><button class="filter-btn active" data-subj="전체">전체</button><button class="filter-btn" data-subj="영어">영어</button><button class="filter-btn" data-subj="수학">수학</button><button class="filter-btn" data-subj="국어">국어</button><button class="filter-btn" data-subj="종합/입시">종합/입시</button></div>
+<div class="section-block" data-subj="영어">
+<div class="section-title">영어 (24개)</div>
+<div class="academy-list"><div class="academy-card">
+<div class="score-badge gray">지역<br>5.8</div>
+<div class="academy-info">
+<div class="academy-name">캘런어학원</div>
+<div class="academy-meta"><span>언급 6회/20회</span><span>30% (지역)</span><span>📞 055-338-8205</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1661734544" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/callan97/224204465480" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>5.8</div>
+<div class="academy-info">
+<div class="academy-name">주촌캠퍼스정철어학원</div>
+<div class="academy-meta"><span>언급 6회/20회</span><span>30% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1169043899" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/kimtaei01/224288051416" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>1.7</div>
+<div class="academy-info">
+<div class="academy-name">시에스영어교습소</div>
+<div class="academy-meta"><span>언급 1회/4회</span><span>25% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/swandive_/223152495195" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>1.7</div>
+<div class="academy-info">
+<div class="academy-name">퀸즈랜드영어교습소</div>
+<div class="academy-meta"><span>언급 1회/4회</span><span>25% (지역)</span><span>📞 055-313-5560</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/ssam-english/224076275662" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>1.1</div>
+<div class="academy-info">
+<div class="academy-name">에센셜영어학원</div>
+<div class="academy-meta"><span>언급 2회/20회</span><span>10% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1777956974" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/developmentlx/224320019792" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">에이드영어수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-339-4226</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1875594273" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/gydud111410/224319238432" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">라일라영어수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-339-3937</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1688845788" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/nhsolution24/224174493765" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">맨투맨영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-314-0519</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/117495307" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/8376647/224323425461" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">율하링구아포럼어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-312-6517</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/22219259" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/yoonscity/224096001462" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">숲속해나WIC어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/90440195" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ykwftuxdgi58459/224320448730" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">라온영어수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1125116587" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mediumzb/224318181405" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">김해에이닷영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/2087753693" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/adotgimhae/224284336651" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">김해루시드어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/lemon_-2/223684859211" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">드림영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1748604768" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/dearye0_/224322990810" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">프린스퍼어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1194480752" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/principerbrian/224291728080" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">공터영어&리얼수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/sorimom777/224323586750" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">아우어수학영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/sda6589/224322522729" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">김태이영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/476110868" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/xhrl5444/224323729251" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">라라랜드학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1336254211" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/chilshipdasiil/224323395504" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">훈민정음국어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1567215534" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/unsaacademy/224323650265" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">브릿지영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/848572026" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/twean19861/224323652894" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">꿀잼영어학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/372696187" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/msmkke82539/224323469877" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">꼼꼼영어교습소</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/886430023" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/natdoc/224322155245" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">유림삼성영어교습소</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/the1311/224300292591" target="_blank" class="btn-link">블로그</a></div>
+</div></div>
+
+</div><div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="3283693943" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div><div class="section-block" data-subj="수학">
+<div class="section-title">수학 (19개)</div>
+<div class="academy-list"><div class="academy-card">
+<div class="score-badge green">전문<br>11.0</div>
+<div class="academy-info">
+<div class="academy-name">수스토리수학교습소</div>
+<div class="academy-meta"><span>언급 2회/2회</span><span>100% (전문)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1159735448" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ejoo1217002/224222268181" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>7.3</div>
+<div class="academy-info">
+<div class="academy-name">제쌤수학전문학원</div>
+<div class="academy-meta"><span>언급 7회/20회</span><span>35% (지역)</span><span>📞 055-325-3232</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1096358637" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hienag/224297975697" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>5.8</div>
+<div class="academy-info">
+<div class="academy-name">LM수학학원</div>
+<div class="academy-meta"><span>언급 6회/20회</span><span>30% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/638804549" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/happywater02/224323265761" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge orange">선호<br>4.4</div>
+<div class="academy-info">
+<div class="academy-name">양샘영수학원</div>
+<div class="academy-meta"><span>언급 2회/5회</span><span>40% (선호)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/kjhcjk0413/223553959554" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.5</div>
+<div class="academy-info">
+<div class="academy-name">장재형수학학원</div>
+<div class="academy-meta"><span>언급 1회/14회</span><span>7% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/mksy1073/224225983942" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">스카이삼성영수학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-333-9967</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1661601626" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/yjsjhs/224259439137" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">윤수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-313-3369</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1656618064" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ochang_highhigh/224323630513" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">영광의아침국어수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-311-2570</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/26607584" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/iskra3300/224323761354" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">쎈스수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-311-8621</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/763273164" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/keyspare/224316687989" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">탑영수학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1005094111" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/pku4499/224323353056" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">대치 깊은생각 수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1035287320" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jasonkingmathk/224323179841" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">더(The)오름영수학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/yjsjhs/224241798427" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">플랜에이수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1136328139" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/planamath/224318964924" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">수학다움학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1646842647" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jungdi_korea/224323506230" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">심수학전문학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/374879929" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/epmmin/224323392166" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">에이드영수학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1259048902" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/nuevi/224303393521" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">홍쌤수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/b2angel1004/224321094007" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">율하유투엠수학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/yulha-u2m/224319957365" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">배움수학과학학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1402131137" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/beyondenglish_yulha/224323740451" target="_blank" class="btn-link">블로그</a></div>
+</div></div>
+
+</div><div class="section-block" data-subj="국어">
+<div class="section-title">국어 (3개)</div>
+<div class="academy-list"><div class="academy-card">
+<div class="score-badge orange">선호<br>8.8</div>
+<div class="academy-info">
+<div class="academy-name">글벗독서논술교습소</div>
+<div class="academy-meta"><span>언급 8회/20회</span><span>40% (선호)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1809173153" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/hjwoo1976/224323643705" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">세종독서당학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-346-7787</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/geulbeot-2008/224321208534" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">이해성아주특별한국어교습소</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/617008706" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ccddee954/224322124824" target="_blank" class="btn-link">블로그</a></div>
+</div></div>
+
+</div><div class="section-block" data-subj="종합/입시">
+<div class="section-title">종합/입시 (14개)</div>
+<div class="academy-list"><div class="academy-card">
+<div class="score-badge gray">지역<br>0.7</div>
+<div class="academy-info">
+<div class="academy-name">지혜의숲주촌학원</div>
+<div class="academy-meta"><span>언급 1회/10회</span><span>10% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/912478213" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/sunkeymaker01/224278647579" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">김해보습학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-334-1288</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/23835215" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/ehddnr24/224319879570" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">우리모두의학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-331-2600</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/58335040" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/meigo0223/224323758456" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">진영엘리트학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-343-6045</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/marong1982/224150957725" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">한양종합학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-327-1008</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/14787014" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/suwasicblog/224323745968" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">하이탑학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-313-9010</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/927966029" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/mathmasuri/224323757080" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">마루애학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-334-6500</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/27235935" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/danbi3235/224322691127" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">구루학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-328-9648</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1731592" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/todaysangin/224309257994" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">야무진송선생학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span><span>📞 055-312-0387</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1064914902" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/zz4ng-/224305602715" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">가온교육학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="https://blog.naver.com/gaon9752/224323628940" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">지혜의숲사고력교육센터삼계학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/1430266397" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/jisupjd/224323644743" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">키움학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/8557213" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/gt1889/224321675120" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">영재나무학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/339957721" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/gnsssmedu/224323672255" target="_blank" class="btn-link">블로그</a></div>
+</div><div class="academy-card">
+<div class="score-badge gray">지역<br>0.3</div>
+<div class="academy-info">
+<div class="academy-name">아리학원</div>
+<div class="academy-meta"><span>언급 1회/20회</span><span>5% (지역)</span></div>
+</div>
+<div class="academy-links"><a href="http://place.map.kakao.com/885394249" target="_blank" class="btn-link">카카오맵</a><a href="https://blog.naver.com/13sisa/224323267078" target="_blank" class="btn-link">블로그</a></div>
+</div></div>
+
+</div>
+<div style="text-align:center;margin:16px auto;max-width:960px;padding:0 20px">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6361932856723644" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6361932856723644" data-ad-slot="7446830466" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<footer class="site-footer">
+<p class="footer-cta">학원 등록 및 광고 문의: <a href="mailto:themakings.official01@gmail.com">themakings.official01@gmail.com</a></p>
+<p class="footer-copy">© 2026 THE MAKINGS · <a href="https://themakings.co.kr">메인으로 돌아가기</a></p>
+</footer>
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const subj=btn.dataset.subj;
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    document.querySelectorAll('.section-block').forEach(sec=>{
+      sec.style.display=(subj==='전체'||sec.dataset.subj===subj)?'':'none';
+    });
+  });
+});
+document.querySelectorAll('.more-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    btn.previousElementSibling.querySelectorAll('.hidden').forEach(el=>el.classList.remove('hidden'));
+    btn.remove();
+  });
+});
+</script></body></html>
